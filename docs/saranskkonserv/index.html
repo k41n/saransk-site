@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Консервный завод «Саранский» — консервы, сгущённое молоко, замороженные овощи</title>
+<meta name="description" content="АО «Консервный завод «Саранский», Саранск: молочная, овощная и мясная консервация, замороженные овощные смеси, молочная продукция и питьевая вода. Поставки оптовым покупателям.">
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Unbounded:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Цвета логотипа СКЗ и текущего сайта */
+  --slate:#404E52;        /* логотип: надпись СКЗ */
+  --green-deep:#00714A;   /* логотип: тёмный зелёный */
+  --green:#42B113;        /* текущий сайт: основной зелёный */
+  --lime:#C9D250;         /* логотип: светлая часть волны */
+  --red:#ED2344;          /* логотип: красная линия */
+  /* Нейтральные и оттенки тех же цветов */
+  --ink:#2B3639;
+  --muted:#5B696D;
+  --paper:#F3F7EF;
+  --mint:#E2EEDA;
+  --lime-tint:#F1F4D2;
+  --slate-tint:#E7EBEB;
+  --line:#D5E0CE;
+  --white:#fff;
+  --f-head:'Unbounded','Onest',system-ui,sans-serif;
+  --f-body:'Onest',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --wrap:1180px;
+  --gut:clamp(16px,4vw,32px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;font-family:var(--f-body);font-size:17px;line-height:1.6;color:var(--ink);background:var(--white);-webkit-text-size-adjust:100%}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--green-deep)}
+h1,h2,h3{font-family:var(--f-head);font-weight:400;line-height:1.15;margin:0;color:var(--slate);letter-spacing:-.01em}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:var(--gut);padding-right:var(--gut)}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:4px}
+
+/* Шапка */
+.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:3px solid var(--red)}
+.top__row{display:flex;align-items:center;gap:24px;min-height:76px}
+.top__logo{flex:none;display:block}
+.top__logo img{height:56px;width:auto}
+.nav{display:flex;gap:6px;margin-left:auto}
+.nav a{padding:8px 14px;border-radius:999px;text-decoration:none;color:var(--slate);font-weight:500;font-size:16px;white-space:nowrap}
+.nav a:hover{background:var(--mint)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:999px;font-weight:600;font-size:17px;text-decoration:none;line-height:1.2;border:2px solid transparent;transition:background .2s,color .2s,border-color .2s}
+.btn--call{background:var(--green-deep);color:#fff}
+.btn--call:hover{background:var(--slate)}
+.btn--ghost{border-color:var(--slate);color:var(--slate);background:transparent}
+.btn--ghost:hover{background:var(--slate);color:#fff}
+.top__tel{flex:none;padding:10px 20px;font-size:17px;white-space:nowrap}
+.ico{width:20px;height:20px;flex:none;fill:currentColor}
+
+/* Первый экран */
+.hero{background:var(--paper);position:relative;overflow:hidden;padding:clamp(36px,6vw,72px) 0 0}
+.hero__grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(20px,4vw,56px);align-items:center}
+.hero h1{font-size:clamp(25px,2.8vw,36px);line-height:1.18;font-weight:500}
+.hero__lead{margin-top:22px;font-size:clamp(17px,1.5vw,20px);max-width:34em;color:var(--ink)}
+.hero__cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.hero__facts{list-style:none;margin:34px 0 0;padding:0;display:grid;gap:10px;max-width:36em}
+.hero__facts li{position:relative;padding-left:22px;font-size:16px;color:var(--muted)}
+.hero__facts li::before{content:"";position:absolute;left:0;top:.62em;width:12px;height:4px;border-radius:2px;background:var(--red)}
+.shelf{--h:clamp(112px,18vw,228px);position:relative;display:flex;align-items:flex-end;justify-content:center;padding:0 0 26px}
+.shelf::after{content:"";position:absolute;left:6%;right:6%;bottom:12px;height:22px;border-radius:50%;background:radial-gradient(ellipse at center,rgba(0,70,45,.28),rgba(0,70,45,0) 70%)}
+.shelf::before{content:"";position:absolute;left:2%;right:2%;top:-4%;bottom:14px;border-radius:50% 50% 46% 46%;background:var(--mint)}
+.shelf img{position:relative;height:calc(var(--h) * var(--k,1));width:auto;margin-left:calc(var(--h) * -.1);filter:drop-shadow(0 8px 7px rgba(0,60,40,.28));animation:rise .8s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--i) * 110ms + 150ms)}
+.shelf img:first-child{margin-left:0}
+@keyframes rise{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:none}}
+.wave{display:block;width:100%;height:clamp(56px,8vw,110px);margin-top:-2px;margin-bottom:-1px}
+
+/* Общие секции */
+.sec{padding:clamp(52px,8vw,96px) 0}
+.sec--tint{background:var(--paper)}
+.sec__head{max-width:46em;margin-bottom:clamp(28px,4vw,46px)}
+.sec__head h2{font-size:clamp(22px,2.4vw,30px)}
+.sec__head p{margin-top:16px;color:var(--muted);max-width:40em}
+
+/* Продукция */
+.cats{display:grid;grid-template-columns:repeat(12,1fr);gap:20px}
+.cat{border-radius:26px;padding:clamp(22px,3vw,34px);display:flex;flex-direction:column;gap:18px;overflow:hidden;position:relative}
+.cat h3{font-size:clamp(20px,2vw,26px)}
+.cat p{max-width:36em}
+.cat__lead{font-weight:500;color:var(--ink)}
+.cat__more{font-size:15.5px;color:var(--muted)}
+.cat__packs{margin-top:auto;display:flex;align-items:flex-end;gap:clamp(8px,2vw,22px);flex-wrap:nowrap;padding-top:6px}
+.cat__packs img{mix-blend-mode:multiply;height:var(--ph,170px);width:auto;max-width:none;min-width:0;flex:0 1 auto;object-fit:contain}
+.cat--milk{grid-column:span 7;background:var(--lime-tint);--ph:150px}
+.cat--meat{grid-column:span 5;background:var(--slate-tint);--ph:150px}
+.cat--veg{grid-column:span 5;background:var(--mint);--ph:150px}
+.cat--frozen{grid-column:span 7;background:var(--paper);border:1px solid var(--line);--ph:125px}
+.cat--dairy{grid-column:span 7;background:var(--white);border:1px solid var(--line);--ph:clamp(64px,9vw,112px)}
+.cat--water{grid-column:span 5;background:var(--slate);color:#fff}
+.cat--water h3{color:#fff}
+.cat--water .cat__lead{color:#fff}
+.cat--water .cat__more{color:#C9D3D5}
+.cat--water .cat__packs{gap:14px}
+.cat--water img{height:auto;width:calc(50% - 7px);max-height:230px;mix-blend-mode:normal;border-radius:16px;aspect-ratio:1/1;object-fit:cover}
+.cat--dairy .cat__packs{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;align-items:end}
+.cat--dairy .cat__packs img{height:auto;width:100%;max-height:120px}
+.cat::after{content:"";position:absolute;left:0;top:0;width:100%;height:6px;background:linear-gradient(90deg,var(--green-deep),var(--green),var(--lime))}
+.cat--water::after{background:linear-gradient(90deg,var(--red),var(--lime))}
+
+/* Торговые марки */
+.brands{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.brand{background:var(--white);border:1px solid var(--line);border-radius:26px;padding:26px 24px 28px;display:flex;flex-direction:column;gap:16px}
+.brand__logo{height:150px;display:flex;align-items:center;justify-content:center;background:#fff;border-radius:16px}
+.brand__logo img{max-height:150px;width:auto;max-width:100%;object-fit:contain}
+.brand--skz .brand__logo img{height:140px}
+.brand h3{font-size:21px}
+.brand p{font-size:16px;color:var(--muted)}
+.brand a{margin-top:auto;font-weight:600;text-decoration:none;border-bottom:2px solid var(--lime);align-self:flex-start;padding-bottom:1px}
+.brand a:hover{border-color:var(--red)}
+
+/* О заводе */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,72px);align-items:start}
+.about__text p+p{margin-top:16px}
+.about__text{font-size:17.5px}
+.slogan{margin-top:26px;font-family:var(--f-head);font-weight:400;font-size:clamp(18px,1.9vw,24px);color:var(--green-deep);line-height:1.25}
+.machines{margin:26px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:10px 22px;font-size:16px}
+.machines li{padding:10px 0;border-top:1px solid var(--line)}
+.machines b{display:block;font-weight:600;color:var(--slate)}
+.machines span{color:var(--muted);font-size:15px}
+.archive{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.archive figure{margin:0;position:relative;border-radius:14px;overflow:hidden;background:#cfc3ac}
+.archive img{width:100%;height:100%;object-fit:cover;filter:sepia(.25) contrast(1.02)}
+.archive figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 12px 10px;background:linear-gradient(transparent,rgba(30,38,40,.82));color:#fff;font-size:14px;line-height:1.35}
+.a1{grid-column:span 6;aspect-ratio:16/9}
+.a2,.a3{grid-column:span 3;aspect-ratio:4/3}
+.a4,.a5{grid-column:span 3;aspect-ratio:4/3}
+.archive__note{margin-top:12px;font-size:14px;color:var(--muted)}
+
+/* Награды */
+.awards{margin-top:clamp(40px,6vw,72px);display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,4vw,56px);align-items:center;background:var(--paper);border-radius:28px;padding:clamp(20px,3vw,34px);border:1px solid var(--line)}
+.awards img{border-radius:18px;width:100%;aspect-ratio:4/3;object-fit:cover}
+.awards h3{font-size:clamp(20px,2.2vw,26px)}
+.awards ul{list-style:none;margin:18px 0 0;padding:0}
+.awards li{padding:10px 0;border-top:1px solid var(--line);display:flex;gap:16px;justify-content:space-between;align-items:baseline}
+.awards li span{color:var(--muted);white-space:nowrap}
+.awards .cap{margin-top:14px;font-size:14.5px;color:var(--muted)}
+
+/* Оптовикам */
+.opt{background:var(--slate);color:#fff}
+.opt h2,.opt h3{color:#fff}
+.opt .sec__head p{color:#C9D3D5}
+.opt__grid{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(28px,5vw,64px)}
+.steps{align-content:start;list-style:none;margin:0;padding:0;counter-reset:s;display:grid;gap:16px}
+.steps li{counter-increment:s;display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start;padding:18px 20px;border-radius:20px;background:rgba(255,255,255,.07)}
+.steps li::before{content:counter(s);width:48px;height:48px;border-radius:50%;background:var(--lime);color:var(--slate);font-family:var(--f-head);font-weight:500;font-size:20px;display:grid;place-items:center}
+.steps b{display:block;font-weight:600;font-size:18px}
+.steps a{color:var(--lime);font-size:15.5px}
+.steps span{color:#C9D3D5;font-size:15.5px}
+.pack{width:100%;border-collapse:collapse;font-size:15.5px}
+.pack caption{text-align:left;font-family:var(--f-head);font-weight:500;font-size:clamp(18px,1.8vw,22px);padding-bottom:12px}
+.pack th,.pack td{text-align:left;padding:11px 12px 11px 0;border-top:1px solid rgba(255,255,255,.18);vertical-align:top}
+.pack th{font-weight:600;color:#fff;width:30%}
+.pack td{color:#DCE4E5}
+.pack td:last-child{white-space:nowrap;padding-right:0;text-align:right}
+.opt__note{margin-top:14px;font-size:14.5px;color:#C9D3D5}
+.opt__contact{margin-top:clamp(28px,4vw,44px);display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center;padding:22px 26px;border-radius:22px;background:var(--lime);color:var(--slate)}
+.opt__contact b{font-family:var(--f-head);font-weight:500;font-size:clamp(18px,2vw,22px)}
+.opt__contact a{color:var(--slate);font-weight:600}
+.opt__contact .btn{margin-left:auto;background:var(--slate);color:#fff}
+.opt__contact .btn:hover{background:var(--green-deep)}
+
+/* Контакты */
+.contacts{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,64px);align-items:start}
+.addr{font-size:clamp(20px,2.2vw,26px);font-weight:600;color:var(--slate);line-height:1.25;font-style:normal}
+.tel{display:inline-block;margin-top:22px;font-family:var(--f-head);font-weight:500;font-size:clamp(26px,3.6vw,40px);color:var(--green-deep);text-decoration:none;letter-spacing:-.02em}
+.tel:hover{color:var(--red)}
+.contacts__lines{margin-top:22px;display:flex;flex-wrap:wrap;gap:12px}
+.dep{display:grid;gap:0}
+.dep div{padding:14px 0;border-top:1px solid var(--line)}
+.dep div:last-child{border-bottom:1px solid var(--line)}
+.dep b{display:block;font-weight:600;color:var(--slate)}
+.dep a{font-weight:500}
+.dep small{display:block;color:var(--muted);font-size:15px}
+
+/* Подвал */
+.foot{background:var(--slate);color:#C9D3D5;padding:30px 0 26px;font-size:15px;position:relative}
+.foot::before{content:"";position:absolute;left:0;right:0;top:0;height:6px;background:linear-gradient(90deg,var(--red) 0 22%,var(--lime) 22% 55%,var(--green) 55% 100%)}
+.foot__row{display:flex;flex-wrap:wrap;gap:16px 32px;align-items:center;justify-content:space-between}
+.foot a{color:#fff}
+.demo{margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,.18);font-size:13px;color:#AAB7BA}
+
+/* Адаптив */
+@media (max-width:1020px){
+  .cat--milk,.cat--meat,.cat--veg{--ph:clamp(130px,19vw,190px)}
+  .cat--frozen{--ph:clamp(120px,17vw,160px)}
+  .cat--dairy .cat__packs img{max-height:150px}
+  .hero__grid{grid-template-columns:1fr}
+  .shelf{margin-top:8px}
+  .brands{grid-template-columns:repeat(2,1fr)}
+  .about,.opt__grid,.contacts,.awards{grid-template-columns:1fr}
+  .cat--milk,.cat--meat,.cat--veg,.cat--frozen,.cat--dairy,.cat--water{grid-column:span 12}
+}
+@media (max-width:860px){
+  .top__row{flex-wrap:wrap;gap:6px 14px;padding-top:10px;padding-bottom:6px}
+  .top__logo img{height:46px}
+  .top__tel{margin-left:auto;padding:10px 16px;font-size:16px}
+  .nav{order:3;flex:0 0 100%;margin:0 calc(var(--gut) * -1);padding:0 var(--gut) 6px;overflow-x:auto;scrollbar-width:none}
+  .nav::-webkit-scrollbar{display:none}
+  html{scroll-padding-top:128px}
+}
+@media (max-width:560px){
+  body{font-size:16.5px}
+  .brands{grid-template-columns:1fr}
+  .brand__logo{height:130px}
+  .machines{grid-template-columns:1fr}
+  .a2,.a3,.a4,.a5{grid-column:span 6;aspect-ratio:1/1}
+  .a1{aspect-ratio:4/3}
+  .btn{width:100%;justify-content:center}
+  .top__tel{width:auto}
+  .cat__packs{flex-wrap:wrap;justify-content:flex-start}
+  .cat--milk,.cat--meat,.cat--veg,.cat--frozen{--ph:104px}
+  .cat--dairy .cat__packs{grid-template-columns:repeat(3,1fr)}
+  .cat--water img{max-height:none}
+  .pack th{width:34%}
+  .pack td:last-child{white-space:nowrap;font-size:.85em}
+  .opt__contact .btn{margin-left:0}
+  .awards li{flex-direction:column;gap:0}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .shelf img{animation:none}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top__row">
+    <a class="top__logo" href="#top" aria-label="Консервный завод «Саранский» — на главную"><img src="img/logo.svg" alt="СКЗ — Саранский консервный завод" width="82" height="56"></a>
+    <nav class="nav" aria-label="Разделы страницы">
+      <a href="#products">Продукция</a>
+      <a href="#brands">Торговые марки</a>
+      <a href="#about">О заводе</a>
+      <a href="#opt">Оптовикам</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn btn--call top__tel" href="tel:88002504113">
+      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>
+      8-800-250-41-13
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div>
+      <h1>Консервы, сгущённое молоко и замороженные овощи из Саранска</h1>
+      <p class="hero__lead">Консервный завод «Саранский» делает молочную, овощную и мясную консервацию, замороженные овощные смеси, молочную продукцию и питьевую воду. Продукцию завода покупают более чем в 45 регионах России.</p>
+      <div class="hero__cta">
+        <a class="btn btn--call" href="tel:88002504113">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>
+          Позвонить: 8-800-250-41-13
+        </a>
+        <a class="btn btn--ghost" href="#opt">Оптовым покупателям</a>
+      </div>
+      <ul class="hero__facts">
+        <li>Завод в Саранске, Республика Мордовия</li>
+        <li>Линии производителей из Дании, Бельгии, Швеции, Германии и Франции</li>
+        <li>С 2016 года — питьевое молоко, творог, адыгейский сыр и вода «Здравинка»</li>
+      </ul>
+    </div>
+    <div class="shelf" aria-label="Продукция завода: горошек, говядина тушёная, сгущённое молоко, замороженные овощи">
+      <img src="img/hero-frozen-lugania-1.png" alt="Замороженные овощи «Луганя», борщ" style="--k:.85;--i:0">
+      <img src="img/hero-veg-goroshek.png" alt="Горошек зелёный СКЗ" style="--k:1.02;--i:1">
+      <img src="img/hero-meat-govyadina.png" alt="Говядина тушёная СКЗ" style="--k:1.12;--i:2">
+      <img src="img/hero-milk-can-blue.png" alt="Молоко цельное сгущённое с сахаром СКЗ" style="--k:.8;--i:3">
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true">
+    <defs><linearGradient id="gw" x1="0" x2="1"><stop offset="0" stop-color="#00714A"/><stop offset=".55" stop-color="#42B113"/><stop offset="1" stop-color="#C9D250"/></linearGradient></defs>
+    <path d="M0,58 C320,6 640,104 1000,50 C1180,24 1330,26 1440,40" fill="none" stroke="#ED2344" stroke-width="5" vector-effect="non-scaling-stroke"/>
+    <path d="M0,78 C330,34 650,120 1010,72 C1190,48 1340,52 1440,64 L1440,110 L0,110 Z" fill="url(#gw)"/>
+    <path d="M0,100 C330,70 650,128 1010,96 C1190,80 1340,84 1440,92 L1440,110 L0,110 Z" fill="#fff"/>
+  </svg>
+</section>
+
+<section class="sec" id="products">
+  <div class="wrap">
+    <div class="sec__head">
+      <h2>Шесть направлений: от сгущённого молока до питьевой воды</h2>
+      <p>Каждое направление — это отдельный каталог завода. Названия позиций указаны по действующему прайс-листу и каталогу сайта завода.</p>
+    </div>
+    <div class="cats">
+
+      <article class="cat cat--milk" id="milk">
+        <h3>Молочная консервация</h3>
+        <p class="cat__lead">Сгущённое молоко — традиционный продукт завода «с момента основания».</p>
+        <p class="cat__more">Молоко цельное сгущённое с сахаром (8,5%), вареное, с какао, с кофе, с цикорием, сливки сгущённые. Выпускают в упаковке doy-pack, в жестяных банках 380 г и 3,8 кг, в бутылках от 370 г до 2 кг.</p>
+        <div class="cat__packs">
+          <img src="img/milk-can-blue.jpg" alt="Молоко сгущённое с сахаром, банка">
+          <img src="img/milk-can-varenoe.jpg" alt="Молоко сгущённое вареное, банка">
+                    <img src="img/milk-varenka.jpg" alt="Сгущённое молоко «Варенка», пакет">
+          <img src="img/milk-cacao.jpg" alt="Молоко сгущённое с какао, пакет">
+          <img src="img/milk-slivki.jpg" alt="Сливки сгущённые с сахаром, пакет">
+        </div>
+      </article>
+
+      <article class="cat cat--meat" id="meat">
+        <h3>Мясная консервация</h3>
+        <p class="cat__lead">Из охлаждённого мяса, которое выращивают в Мордовии и Ульяновской области.</p>
+        <p class="cat__more">Говядина и свинина тушёные, мясо цыплят в собственном соку, овощи с говядиной, каши с говядиной, свининой и индейкой, горох с мясом. Срок годности говядины тушёной — 36 месяцев.</p>
+        <div class="cat__packs">
+          <img src="img/meat-govyadina.jpg" alt="Говядина тушёная СКЗ">
+          <img src="img/meat-kura.jpg" alt="Мясо цыплят в собственном соку СКЗ">
+          <img src="img/kashi-govyadina.png" alt="Каша гречневая с говядиной СКЗ">
+        </div>
+      </article>
+
+      <article class="cat cat--veg" id="veg">
+        <h3>Овощная консервация</h3>
+        <p class="cat__lead">Овощи собирают в пик созревания и в течение нескольких часов отправляют на переработку.</p>
+        <p class="cat__more">Зелёный горошек высшего сорта, фасоль белая и красная, фасоль в томатном соусе, кукуруза сахарная, печёный горошек и баклажаны с овощами.</p>
+        <div class="cat__packs">
+          <img src="img/veg-goroshek.jpg" alt="Горошек зелёный СКЗ">
+          <img src="img/veg-fasol.jpg" alt="Фасоль белая в томатном соусе">
+          <img src="img/veg-kukuruza.jpg" alt="Кукуруза сахарная СКЗ">
+        </div>
+      </article>
+
+      <article class="cat cat--frozen" id="frozen">
+        <h3>Замороженные овощи и смеси</h3>
+        <p class="cat__lead">Две марки: «Луганя» и «Месье Поваро».</p>
+        <p class="cat__more">«Луганя»: борщ, рагу из овощей, оливье, овощи по-деревенски, лечо, зелёный горошек. «Месье Поваро»: смеси «Мусака», «Примавера», «Лечо», «Рататуй», «Мексикано», «По-баварски», «Гавайола». Пакет 400 г, срок годности 12 месяцев.</p>
+        <div class="cat__packs">
+          <img src="img/frozen-lugania-1.jpg" alt="Замороженные овощи «Луганя», борщ">
+          <img src="img/frozen-lugania-2.jpg" alt="Замороженные овощи «Луганя», салатная смесь">
+          <img src="img/frozen-povaro-1.jpg" alt="Замороженная смесь «Месье Поваро», лечо">
+          <img src="img/frozen-povaro-2.jpg" alt="Замороженная смесь «Месье Поваро», примавера">
+        </div>
+      </article>
+
+      <article class="cat cat--dairy" id="dairy">
+        <h3>Молочная продукция</h3>
+        <p class="cat__lead">Питьевое молоко, кефир, сметана, творог и сыр.</p>
+        <p class="cat__more">Выпуск питьевого молока, творога и адыгейского сыра завод начал в 2016 году. Завод планирует расширить ассортимент кисломолочной продукции.</p>
+        <div class="cat__packs">
+          <img src="img/dairy-moloko.jpg" alt="Молоко питьевое пастеризованное цельное">
+          <img src="img/dairy-kefir.jpg" alt="Кефир">
+          <img src="img/dairy-smetana.jpg" alt="Сметана">
+          <img src="img/dairy-tvorog.jpg" alt="Творог">
+          <img src="img/dairy-syr.jpg" alt="Сыр">
+        </div>
+      </article>
+
+      <article class="cat cat--water" id="water">
+        <h3>Вода «Здравинка»</h3>
+        <p class="cat__lead">Питьевая вода, газированная и негазированная.</p>
+        <p class="cat__more">Бутылки от 0,33 до 5 литров, срок годности 12 месяцев.</p>
+        <div class="cat__packs">
+          <img src="img/water-1.jpg" alt="Вода «Здравинка» негазированная, бутылка">
+          <img src="img/water-2.jpg" alt="Вода «Здравинка» газированная, бутылка">
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--tint" id="brands">
+  <div class="wrap">
+    <div class="sec__head">
+      <h2>Четыре торговые марки на одной полке</h2>
+      <p>Под ними завод выпускает консервы, замороженные смеси и воду.</p>
+    </div>
+    <div class="brands">
+      <article class="brand brand--skz">
+        <div class="brand__logo"><img src="img/logo.svg" alt="Логотип СКЗ, Саранский консервный завод"></div>
+        <h3>СКЗ</h3>
+        <p>Главная марка завода. Под ней выходят овощные, мясные и молочные консервы.</p>
+        <a href="#milk">Смотреть консервы</a>
+      </article>
+      <article class="brand">
+        <div class="brand__logo"><img src="img/brand-lugania.jpg" alt="Логотип «Луганя»" width="150" height="150"></div>
+        <h3>Луганя</h3>
+        <p>Замороженные овощные смеси: борщ, рагу, оливье, овощи по-деревенски.</p>
+        <a href="#frozen">Смотреть смеси</a>
+      </article>
+      <article class="brand">
+        <div class="brand__logo"><img src="img/brand-povaro.jpg" alt="Логотип «Месье Поваро»" width="150" height="150"></div>
+        <h3>Месье Поваро</h3>
+        <p>Замороженные смеси с названиями блюд: «Мусака», «Примавера», «Рататуй».</p>
+        <a href="#frozen">Смотреть смеси</a>
+      </article>
+      <article class="brand">
+        <div class="brand__logo"><img src="img/brand-zdravinka.jpg" alt="Логотип «Здравинка»" width="150" height="150"></div>
+        <h3>Здравинка</h3>
+        <p>Питьевая вода в бутылках от 0,33 до 5 литров.</p>
+        <a href="#water">Смотреть воду</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="about">
+  <div class="wrap">
+    <div class="about">
+      <div class="about__text">
+        <h2 style="font-size:clamp(22px,2.4vw,30px);margin-bottom:22px">О заводе</h2>
+        <p>АО «Консервный завод «Саранский» — одно из крупнейших перерабатывающих предприятий Республики Мордовия. Завод выпускает молочную, овощную и мясорастительную консервацию, а также замороженные овощные смеси.</p>
+        <p>На заводе работает оборудование ведущих европейских производителей. Специалисты контролируют качество продукции на всём протяжении технологического процесса.</p>
+        <p class="slogan">Экологично. Полезно. Вкусно.</p>
+        <ul class="machines">
+          <li><b>Cabinplant</b><span>Дания</span></li>
+          <li><b>FAM</b><span>Бельгия</span></li>
+          <li><b>Frigoscania</b><span>Швеция</span></li>
+          <li><b>Laudenberg</b><span>Германия</span></li>
+          <li><b>Steriflow</b><span>Франция</span></li>
+        </ul>
+      </div>
+      <div>
+        <div class="archive">
+          <figure class="a1"><img src="img/archive-06.jpg" alt="Архивный снимок: строительство завода"><figcaption>Из заводского архива</figcaption></figure>
+          <figure class="a2"><img src="img/archive-11.jpg" alt="Архивный снимок: фруктовый цех"><figcaption>Фруктовый цех, 1931 год</figcaption></figure>
+          <figure class="a3"><img src="img/archive-10.jpg" alt="Архивный снимок: молочный цех"><figcaption>Молочный цех</figcaption></figure>
+          <figure class="a4"><img src="img/archive-12.jpg" alt="Архивный снимок: работница у чана с яблоками"><figcaption>Загрузка яблок, 1937–1938 годы</figcaption></figure>
+          <figure class="a5"><img src="img/archive-08.jpg" alt="Архивный снимок: работницы завода"><figcaption>Работницы завода</figcaption></figure>
+        </div>
+        <p class="archive__note">Фотографии из архива завода. Подписи взяты с самих снимков.</p>
+      </div>
+    </div>
+
+    <div class="awards">
+      <img src="img/award-export.jpg" alt="Диплом: 1 место, АО «Консервный завод «Саранский», номинация «Лидеры экспорта в сфере готового продовольствия»">
+      <div>
+        <h3>Награды завода</h3>
+        <ul>
+          <li>Золотая осень <span>2019</span></li>
+          <li>100 лучших товаров России <span>2019</span></li>
+          <li>Лучшие товары Мордовии <span>2019</span></li>
+        </ul>
+        <p class="cap">На снимке: 1 место в номинации «Лидеры экспорта в сфере готового продовольствия». Другие награды и дипломы смотрите на сайте завода.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec opt" id="opt">
+  <div class="wrap">
+    <div class="sec__head">
+      <h2>Оптовикам: как начать поставки</h2>
+      <p>Завод работает с оптовыми покупателями по договору поставки. Документы можно скачать на сайте завода.</p>
+    </div>
+    <div class="opt__grid">
+      <ol class="steps">
+        <li><div><b>Подготовьте документы</b><a href="https://saranskkonserv.ru/upload/medialibrary/2ab/2ab7190d6be995b74c009febd5428821.docx">Скачать перечень документов</a></div></li>
+        <li><div><b>Заключите договор поставки</b><a href="https://saranskkonserv.ru/upload/medialibrary/636/636b7597a9a33a093ad96962ff51ea87.doc">Скачать договор</a></div></li>
+        <li><div><b>Отправьте заявку на поставку</b><a href="https://saranskkonserv.ru/upload/medialibrary/ed6/ed649c9373665827be952af822215274.doc">Скачать форму заявки</a></div></li>
+      </ol>
+      <div>
+        <table class="pack">
+          <caption>Фасовка и срок годности</caption>
+          <tbody>
+            <tr><th scope="row">Сгущённое молоко</th><td>doy-pack 100 и 270 г, банка 380 г и 3,8 кг, бутылки 370 г – 2 кг, bag-in-box 25 кг, налив 18 т</td><td>6–12 мес.</td></tr>
+            <tr><th scope="row">Мясные консервы</th><td>банка 338 г, стекло 500 г, ламистер 250 г</td><td>24–36 мес.</td></tr>
+            <tr><th scope="row">Овощные консервы</th><td>банка 360 г, евробанка 400–425 г, стекло 360–500 г</td><td>24 мес.</td></tr>
+            <tr><th scope="row">Замороженные овощи</th><td>пакет 400 г, 14 пакетов в коробке</td><td>12 мес.</td></tr>
+            <tr><th scope="row">Вода «Здравинка»</th><td>бутылки 0,33 – 5 л</td><td>12 мес.</td></tr>
+          </tbody>
+        </table>
+        <p class="opt__note">Данные из прайс-листа завода. Цены и актуальные условия уточняйте в отделе реализации.</p>
+      </div>
+    </div>
+    <div class="opt__contact">
+      <b>Отдел реализации</b>
+      <a href="tel:88002504113">8-800-250-41-13</a>
+      <a href="tel:88342245977">8 (8342) 24-59-77</a>
+      <a href="mailto:sales@skzrm.ru">sales@skzrm.ru</a>
+      <a class="btn" href="tel:88002504113">Позвонить</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="contacts">
+  <div class="wrap">
+    <div class="sec__head"><h2>Контакты</h2></div>
+    <div class="contacts">
+      <div>
+        <address class="addr">430003, Республика Мордовия,<br>г. Саранск, пр-т Ленина, д. 54</address>
+        <a class="tel" href="tel:88002504113">8-800-250-41-13</a>
+        <div class="contacts__lines">
+          <a class="btn btn--call" href="tel:88002504113">Позвонить</a>
+          <a class="btn btn--ghost" href="mailto:mail@skzrm.ru">mail@skzrm.ru</a>
+          <a class="btn btn--ghost" href="https://yandex.ru/maps/?text=%D0%A1%D0%B0%D1%80%D0%B0%D0%BD%D1%81%D0%BA%2C%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%20%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0%2C%2054" target="_blank" rel="noopener">Открыть на карте</a>
+        </div>
+      </div>
+      <div class="dep">
+        <div><b>Приёмная, генеральный директор</b><a href="tel:88342247141">8 (8342) 24-71-41</a><small>Меркушкин Александр Николаевич</small></div>
+        <div><b>Отдел реализации</b><a href="tel:88342245977">8 (8342) 24-59-77</a><small><a href="mailto:sales@skzrm.ru">sales@skzrm.ru</a></small></div>
+        <div><b>Менеджер по качеству</b><a href="tel:88342246569">8 (8342) 24-65-69</a><small><a href="mailto:skz_skk@skzrm.ru">skz_skk@skzrm.ru</a></small></div>
+        <div><b>Отдел кадров</b><a href="tel:88342327651">8 (8342) 32-76-51</a><small><a href="mailto:konserv_kadry@mail.ru">konserv_kadry@mail.ru</a></small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__row">
+      <span>АО «Консервный завод «Саранский», Саранск</span>
+      <a href="tel:88002504113">8-800-250-41-13</a>
+    </div>
+    <p class="demo">Демо-версия. Материалы принадлежат АО "Консервный завод "Саранский".</p>
+  </div>
+</footer>
+
+</body>
+</html>

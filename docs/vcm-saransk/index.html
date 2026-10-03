@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>ЗАО «Вторцветмет» — приём лома цветных металлов, Саранск</title>
+<meta name="description" content="ЗАО «Вторцветмет», г. Саранск, ул. Рабочая, 85. Приём лома и отходов цветных металлов. Алюминиевые чушки по ГОСТ 1583-93. Телефон +7 (8342) 24-10-57.">
+<link rel="icon" href="img/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Russo+One&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1e0a0a;      /* фон сайта клиента, чуть светлее #140101 */
+  --ink-deep:#140101; /* фон страницы клиента */
+  --ink-soft:#2c1413; /* оттенок фона */
+  --sand:#d6b88f;     /* цвет ссылок и рамок сайта клиента */
+  --sand-pale:#efe3cf;
+  --sand-dark:#a88a62;
+  --green:#0a9a1e;    /* зелёный логотипа */
+  --green-deep:#067515;
+  --text:#f2e8d8;
+  --muted:#b9a589;
+  --display:"Russo One","Arial Black",sans-serif;
+  --body:"Golos Text","Segoe UI",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:var(--text);font-family:var(--body);font-size:17px;line-height:1.55;-webkit-text-size-adjust:100%}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.08;margin:0}
+
+/* шапка */
+.top{background:var(--ink-deep);border-bottom:1px solid #3a1d1b}
+.top .wrap{display:flex;align-items:center;gap:28px;padding-block:14px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:52px;height:auto}
+.brand b{font-family:var(--display);font-weight:400;font-size:21px;letter-spacing:.02em;white-space:nowrap}
+.nav{display:flex;gap:26px;margin-left:auto}
+.nav a{text-decoration:none;color:var(--sand);font-weight:500;font-size:16px}
+.nav a:hover{color:#fff}
+.top-tel{font-family:var(--display);font-size:19px;text-decoration:none;color:var(--ink);background:var(--sand);padding:10px 18px;border-radius:3px;white-space:nowrap}
+.top-tel:hover{background:#fff}
+
+/* первый экран */
+.hero{position:relative;overflow:hidden;background:var(--ink)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding-block:76px 64px;position:relative;z-index:1}
+.hero h1{font-size:clamp(32px,4.3vw,56px);letter-spacing:.005em}
+.hero .lead{margin:24px 0 0;font-size:20px;color:var(--text);max-width:34em}
+.hero .lead span{color:var(--sand)}
+.cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px;align-items:center}
+.btn{display:inline-block;font-family:var(--display);font-size:18px;text-decoration:none;padding:16px 28px;border-radius:3px;background:var(--green);color:#fff;border:2px solid var(--green)}
+.btn:hover{background:var(--green-deep);border-color:var(--green-deep)}
+.btn.ghost{background:transparent;color:var(--sand);border-color:var(--sand)}
+.btn.ghost:hover{background:var(--sand);color:var(--ink)}
+.hero-note{margin-top:16px;color:var(--muted);font-size:15px}
+.ingot-box{position:relative}
+.ingot-box .mark{position:absolute;right:-8%;top:-18%;width:78%;opacity:.12;z-index:0}
+.ingot-photo{position:relative;z-index:1;margin:0;background:var(--ink-deep);border:2px solid var(--sand);padding:10px;box-shadow:0 22px 24px rgba(0,0,0,.45)}
+.ingot-photo img{display:block;width:100%;height:auto}
+.ingot-photo figcaption{display:flex;flex-direction:column;gap:4px;padding:12px 4px 4px}
+.ingot-photo figcaption b{font-family:var(--display);font-weight:400;font-size:22px;color:var(--sand);letter-spacing:.02em}
+.ingot-photo figcaption span{font-size:14px;color:var(--muted)}
+
+/* полоса марок */
+.grades{background:var(--sand);color:var(--ink)}
+.grades .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:10px 30px;padding-block:16px}
+.grades p{margin:0;font-weight:600;font-size:15px}
+.grades ul{display:flex;flex-wrap:wrap;gap:8px 26px;list-style:none;margin:0;padding:0}
+.grades li{font-family:var(--display);font-size:22px;position:relative;white-space:nowrap}
+.grades li+li:before{content:"";position:absolute;left:-16px;top:50%;width:6px;height:6px;margin-top:-3px;background:var(--green)}
+
+section{padding-block:84px}
+.sec-head{max-width:760px;margin-bottom:44px}
+.sec-head h2{font-size:clamp(30px,4vw,48px)}
+.sec-head p{margin:16px 0 0;font-size:19px;color:var(--muted)}
+
+/* приём */
+.accept{background:var(--sand-pale);color:var(--ink)}
+.accept .sec-head p{color:#5b4332}
+.groups{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.group{background:#fff8ec;border:1px solid #cdb289;border-radius:4px;padding:26px 26px 22px}
+.group h3{font-size:25px;margin-bottom:16px;display:flex;align-items:center;gap:12px}
+.group h3:before{content:"";width:14px;height:14px;background:var(--green);flex:none}
+.group ul{list-style:none;margin:0;padding:0}
+.group li{padding:9px 0;border-top:1px solid #e1cfae;font-size:18px}
+.g-al{grid-column:span 6;background:var(--ink);color:var(--text);border-color:var(--ink)}
+.g-al li{border-color:#3d2321}
+.g-al ul{columns:2;column-gap:32px}
+.g-al li{break-inside:avoid}
+.g-cu{grid-column:span 3}
+.g-br{grid-column:span 3}
+.g-st{grid-column:span 4}
+.g-pb{grid-column:span 4}
+.g-ot{grid-column:span 4}
+.price-note{margin-top:28px;display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:center;background:var(--ink);color:var(--text);padding:24px 28px;border-radius:4px}
+.price-note strong{font-family:var(--display);font-weight:400;font-size:28px;color:var(--sand)}
+.price-note p{margin:0;font-size:17px}
+.price-note a{color:var(--sand);font-weight:600;white-space:nowrap}
+
+/* условия */
+.terms{background:var(--ink-deep)}
+.terms-list{border-top:1px solid #4a2826}
+.term{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:30px;padding:26px 0;border-bottom:1px solid #4a2826;align-items:baseline}
+.term h3{font-size:clamp(22px,2.6vw,32px);color:var(--sand)}
+.term p{margin:0;color:var(--text);font-size:18px}
+
+/* продажа */
+.sell{background:var(--ink)}
+.sell-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.stamps{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 8px}
+.stamp{font-family:var(--display);font-size:26px;color:var(--ink);background:var(--sand);padding:8px 16px 6px;border-radius:3px;box-shadow:inset 0 0 0 2px var(--ink),inset 0 0 0 4px var(--sand-dark)}
+.sell .gost{font-size:15px;color:var(--muted);margin:0 0 28px}
+.facts{list-style:none;margin:0;padding:0}
+.facts li{padding:12px 0 12px 30px;border-top:1px solid #4a2826;position:relative;font-size:18px}
+.facts li:before{content:"";position:absolute;left:0;top:21px;width:12px;height:12px;background:var(--green)}
+.photos{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
+.photos figure{margin:0;border:2px solid var(--sand);background:var(--ink-deep)}
+.photos img{width:100%;height:auto}
+.photos .wide{grid-column:span 2}
+.photos .tall img{height:100%;object-fit:cover}
+.photos figcaption{padding:8px 12px;font-size:14px;color:var(--muted);background:var(--ink-deep)}
+.also{margin-top:36px}
+.also h3{font-size:22px;color:var(--sand);margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.chips li{border:1px solid var(--sand-dark);border-radius:30px;padding:5px 15px;font-size:16px}
+
+/* о компании */
+.about{background:var(--sand);color:var(--ink)}
+.about .wrap{display:grid;grid-template-columns:260px 1fr;gap:56px;align-items:center}
+.about .logo-plate{background:var(--ink);border-radius:4px;padding:28px}
+.about h2{font-size:clamp(30px,4vw,46px);margin-bottom:18px}
+.about p{margin:0 0 14px;font-size:19px;max-width:40em}
+
+/* контакты */
+.contacts{background:var(--ink-deep)}
+.c-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:48px;align-items:start}
+.c-list{margin:0;padding:0;list-style:none}
+.c-list li{padding:16px 0;border-top:1px solid #4a2826}
+.c-list li:last-child{border-bottom:1px solid #4a2826}
+.c-list small{display:block;color:var(--muted);font-size:15px;margin-bottom:2px}
+.c-list a{text-decoration:none}
+.c-list .big{font-family:var(--display);font-size:clamp(26px,3.4vw,38px);color:var(--sand);display:inline-block;line-height:1.2}
+.c-list .big:hover{color:#fff}
+.phones{display:flex;flex-wrap:wrap;gap:6px 26px}
+.phones a{font-size:20px;font-weight:600;color:var(--text)}
+.phones a:hover{color:var(--sand)}
+.route{background:var(--sand);border-radius:4px;padding:14px}
+.route img{width:100%;height:auto;mix-blend-mode:multiply}
+.route p{margin:10px 2px 2px;color:var(--ink);font-size:15px}
+.route a{color:var(--green-deep);font-weight:600}
+
+footer{background:#0d0000;color:var(--muted);font-size:14px;padding-block:22px;text-align:center}
+
+@media (max-width:900px){
+  .nav{display:none}
+  .top .wrap{justify-content:space-between}
+  .top .wrap{gap:12px}
+  .hero .wrap{grid-template-columns:1fr;padding-block:44px 40px}
+  .ingot-box{max-width:460px}
+  section{padding-block:56px}
+  .g-al,.g-cu,.g-br,.g-st,.g-pb,.g-ot{grid-column:span 12}
+  .g-cu,.g-br,.g-st,.g-pb,.g-ot{grid-column:span 6}
+  .term{grid-template-columns:1fr;gap:8px}
+  .sell-grid,.c-grid{grid-template-columns:1fr;gap:36px}
+  .about .wrap{grid-template-columns:1fr;gap:28px}
+  .about .logo-plate{max-width:200px}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  .wrap{width:calc(100% - 32px)}
+  .brand img{width:42px}
+  .brand b{font-size:16px}
+  .top-tel{font-size:14px;padding:9px 12px}
+  .hero .lead{font-size:18px}
+  .btn{width:100%;text-align:center}
+  .g-cu,.g-br,.g-st,.g-pb,.g-ot{grid-column:span 12}
+  .g-al ul{columns:1}
+  .group{padding:20px}
+  .price-note{grid-template-columns:1fr;gap:10px}
+  .grades li{font-size:19px}
+  .btn{white-space:nowrap;font-size:19px}
+  .btn .lbl{display:none}
+  .grades ul{gap:6px 18px}
+  .grades li+li:before{display:none}
+  .photos{gap:10px}
+  .photos figcaption{padding:6px 8px;font-size:13px}
+  .phones a{font-size:19px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media (max-width:560px){.phones a{display:inline-block;padding:8px 0}.top-tel{padding:12px 12px}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="ЗАО «Вторцветмет»">
+      <img src="img/logo.png" alt="" width="52" height="50">
+      <b>ЗАО «Вторцветмет»</b>
+    </a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#priem">Покупка лома</a>
+      <a href="#prodazha">Продажа</a>
+      <a href="#o-kompanii">О компании</a>
+      <a href="#kontakty">Контакты</a>
+    </nav>
+    <a class="top-tel" href="tel:+78342241057">24-10-57</a>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Принимаем лом и отходы цветных металлов в Саранске</h1>
+      <p class="lead">Покупаем, перерабатываем и продаём. Из вторичного алюминия отливаем чушки по <span>ГОСТ 1583-93</span>. Работаем на рынке с 1995 года.</p>
+      <div class="cta">
+        <a class="btn" href="tel:+78342241057"><span class="lbl">Позвонить: </span>+7 (8342) 24-10-57</a>
+        <a class="btn ghost" href="#priem">Что принимаем</a>
+      </div>
+      <p class="hero-note">г. Саранск, ул. Рабочая, 85. Принимаем металлолом в габарите и негабарите.</p>
+    </div>
+    <div class="ingot-box">
+      <img class="mark" src="img/logo.png" alt="">
+      <figure class="ingot-photo">
+        <img src="img/gal1.jpg" width="428" height="318" alt="Алюминиевые чушки в связанных пакетах">
+        <figcaption><b>Алюминиевые чушки</b><span>Сплавы по ГОСТ 1583-93: АК5М2, АК9М2, АК9, АК12М2, АК8М, АВ87</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
+
+<div class="grades">
+  <div class="wrap">
+    <p>Сплавы алюминия в чушках, ГОСТ 1583-93:</p>
+    <ul>
+      <li>АК5М2</li><li>АК9М2</li><li>АК9</li><li>АК12М2</li><li>АК8М</li><li>АВ87</li>
+    </ul>
+  </div>
+</div>
+
+<section class="accept" id="priem">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Что мы покупаем</h2>
+      <p>Шестнадцать видов лома и отходов. Принимаем в габарите и негабарите.</p>
+    </div>
+    <div class="groups">
+      <div class="group g-al">
+        <h3>Алюминий</h3>
+        <ul>
+          <li>Моторы</li>
+          <li>Несортовой</li>
+          <li>Пищевой</li>
+          <li>Стружка</li>
+          <li>Электротехнический</li>
+          <li>Банка</li>
+        </ul>
+      </div>
+      <div class="group g-cu">
+        <h3>Медь</h3>
+        <ul><li>Медь</li><li>Медная стружка</li></ul>
+      </div>
+      <div class="group g-br">
+        <h3>Латунь</h3>
+        <ul><li>Латунь</li><li>Латунная стружка</li></ul>
+      </div>
+      <div class="group g-st">
+        <h3>Нержавейка</h3>
+        <ul><li>Нержавеющая сталь</li><li>Нержавеющая стружка</li></ul>
+      </div>
+      <div class="group g-pb">
+        <h3>Свинец</h3>
+        <ul><li>Кабельный</li><li>Плавленый</li></ul>
+      </div>
+      <div class="group g-ot">
+        <h3>Ещё</h3>
+        <ul><li>Аккумуляторы б/у</li><li>Кабель в изоляции</li></ul>
+      </div>
+    </div>
+    <div class="price-note">
+      <strong>Цена договорная</strong>
+      <p>Цену на каждый вид лома компания обсуждает по телефону. Цена зависит от котировок Лондонской биржи металлов (LME) и от внутренних российских цен. Уточняйте актуальную цену: <a href="tel:+78342241057">+7 (8342) 24-10-57</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="terms" id="usloviya">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Условия покупки</h2>
+    </div>
+    <div class="terms-list">
+      <div class="term"><h3>Любой габарит</h3><p>Компания принимает металлолом в габарите и негабарите.</p></div>
+      <div class="term"><h3>Индивидуальные условия</h3><p>Условия приёма и поставки не зависят от объёма закупок. Компания строит их под каждого клиента.</p></div>
+      <div class="term"><h3>Предоплата</h3><p>Постоянным клиентам возможна предоплата.</p></div>
+      <div class="term"><h3>Ваше предложение</h3><p>Компания готова рассмотреть все разумные предложения по закупке лома цветных металлов.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sell" id="prodazha">
+  <div class="wrap sell-grid">
+    <div>
+      <div class="sec-head" style="margin-bottom:0">
+        <h2>Алюминий в чушках и лом на продажу</h2>
+      </div>
+      <div class="stamps" aria-label="Марки сплавов">
+        <span class="stamp">АК5М2</span><span class="stamp">АК9М2</span><span class="stamp">АК9</span><span class="stamp">АК12М2</span><span class="stamp">АК8М</span><span class="stamp">АВ87</span>
+      </div>
+      <p class="gost">Вторичный алюминиевый сплав по ГОСТ 1583-93. Другие марки отливают по согласованию с потребителем.</p>
+      <ul class="facts">
+        <li>Партии практически в любых количествах</li>
+        <li>Небольшие плавки от 500 кг</li>
+        <li>Сплавы по предварительному заказу и в короткие сроки</li>
+        <li>Доставка до заказчика</li>
+        <li>Цена договорная. Компания обсуждает её с каждым заказчиком отдельно</li>
+      </ul>
+      <div class="also">
+        <h3>Также продаём лом</h3>
+        <ul class="chips">
+          <li>Медь «кусок»</li><li>Медь «микс»</li><li>Медь «блестяшка»</li><li>Медная стружка</li><li>Латунь</li><li>Латунная стружка</li><li>Нержавеющая сталь</li><li>Нержавеющая стружка</li><li>Свинец кабельный</li><li>Свинец плавленый</li><li>Аккумуляторы б/у</li><li>Алюминий электротехнический</li>
+        </ul>
+      </div>
+    </div>
+    <div class="photos">
+      <figure class="wide"><img src="img/gal1.jpg" width="440" height="330" alt="Алюминиевые чушки в связанных пакетах"><figcaption>Алюминиевые чушки</figcaption></figure>
+      <figure><img src="img/gal2.jpg" width="440" height="330" alt="Рабочий у плавильной печи"><figcaption>Плавка</figcaption></figure>
+      <figure><img src="img/gal3.jpg" width="440" height="330" alt="Загрузка лома в печь"><figcaption>Печь</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="o-kompanii">
+  <div class="wrap">
+    <div class="logo-plate"><img src="img/logo.png" alt="Логотип ВЦМ" width="204" height="198"></div>
+    <div>
+      <h2>О компании</h2>
+      <p>ЗАО «Вторцветмет» работает на рынке вторичных цветных металлов и цветного лома с 1995 года. Основа дела: покупка, переработка и продажа лома цветных металлов.</p>
+      <p>Сейчас главная продукция компании — вторичный алюминиевый сплав в чушках по ГОСТ 1583-93.</p>
+      <p>Производство гибкое. Компания выполняет заказы любого объёма, от крупных заказчиков до небольших предприятий. Среди клиентов есть зарубежные.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contacts" id="kontakty">
+  <div class="wrap">
+    <div class="sec-head"><h2>Контакты</h2></div>
+    <div class="c-grid">
+      <ul class="c-list">
+        <li><small>Адрес</small><span class="big" style="font-size:clamp(22px,2.8vw,30px)">Республика Мордовия, г. Саранск, ул. Рабочая, 85</span></li>
+        <li><small>Телефон</small><a class="big" href="tel:+78342241057">+7 (8342) 24-10-57</a></li>
+        <li><small>Другие телефоны</small>
+          <div class="phones">
+            <a href="tel:+78342241154">(8342) 24-11-54</a>
+            <a href="tel:+79276405738">+7 927 640-57-38</a>
+            <a href="tel:+79093255666">+7 909 325-56-66</a>
+          </div>
+        </li>
+        <li><small>Факс</small><span style="font-size:20px;font-weight:600">(8342) 24-55-90</span></li>
+        <li><small>Электронная почта</small><a class="big" style="font-size:clamp(20px,2.6vw,28px)" href="mailto:vcm-saransk@mail.ru">vcm-saransk@mail.ru</a></li>
+        <li><small>Генеральный директор</small><span style="font-size:20px;font-weight:600">Ганаев Евгений Николаевич</span></li>
+      </ul>
+      <div class="route">
+        <img src="img/route.jpg" width="1400" height="994" alt="Схема проезда из Ульяновска до ул. Рабочая, 85">
+        <p>Схема проезда из Ульяновска. <a href="https://yandex.ru/maps/?text=%D0%A1%D0%B0%D1%80%D0%B0%D0%BD%D1%81%D0%BA%2C%20%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B0%D1%8F%2C%2085">Открыть на Яндекс Картах</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">Демо-версия. Материалы принадлежат ЗАО «Вторцветмет»</div>
+</footer>
+
+</body>
+</html>

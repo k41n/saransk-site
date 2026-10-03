@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Саранскстройзаказчик — проектно-строительная холдинговая компания</title>
+<meta name="description" content="АО ХК «Саранскстройзаказчик», г. Саранск, ул. Советская, 52. Жилые дома и общественные здания, кирпич и железобетон, предприятия холдинга. Телефон (8342) 47-73-01.">
+<link rel="icon" type="image/png" href="img/emblem.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@400;500;600&display=swap&subset=cyrillic" rel="stylesheet">
+<style>
+:root{
+  --ink:#24263a;        /* контур букв логотипа */
+  --ink-2:#31344d;
+  --steel:#8e9ab8;      /* фирменный стальной */
+  --steel-d:#6a7990;    /* рамки меню старого сайта */
+  --lav:#6c6b90;        /* тень букв логотипа */
+  --silver:#dfe0e6;     /* серебро логотипа */
+  --mist:#eef1f7;       /* фон меню старого сайта, светлее */
+  --paper:#f7f9fc;
+  --red:#d0302d;        /* красный старого сайта, только акцент */
+  --line:rgba(36,38,58,.18);
+  --serif:'IBM Plex Serif',Georgia,serif;
+  --sans:'IBM Plex Sans',system-ui,sans-serif;
+  --cond:'IBM Plex Sans Condensed','IBM Plex Sans',system-ui,sans-serif;
+  --gut:clamp(16px,4vw,48px);
+  --max:1240px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+h1,h2,h3{font-family:var(--serif);font-weight:500;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(28px,4vw,46px);line-height:1.1}
+p{margin:0}
+.cond{font-family:var(--cond)}
+
+/* ---------- шапка ---------- */
+.top{position:sticky;top:0;z-index:20;background:rgba(36,38,58,.96);color:#fff;backdrop-filter:blur(6px);border-bottom:1px solid rgba(255,255,255,.12)}
+.top .wrap{display:flex;align-items:center;gap:20px;height:68px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;flex:none}
+.brand img{width:44px;height:44px;border-radius:50%;box-shadow:0 0 0 2px rgba(255,255,255,.35)}
+.brand b{font:600 18px/1 var(--serif);letter-spacing:.01em}
+.brand small{display:none}
+.nav{margin-left:auto;display:flex;gap:22px;font:500 15px var(--cond);white-space:nowrap}
+.nav a{text-decoration:none;color:#dfe0e6;padding:6px 0;border-bottom:2px solid transparent}
+.nav a:hover{border-color:var(--steel);color:#fff}
+.tel{flex:none;background:var(--red);color:#fff;text-decoration:none;font:600 16px/1 var(--sans);padding:12px 16px;white-space:nowrap}
+.tel:hover{background:#b8231f}
+
+/* ---------- первый экран ---------- */
+.hero{position:relative;background:var(--ink);color:#fff;overflow:hidden;
+  background-image:
+   linear-gradient(rgba(142,154,184,.10) 1px,transparent 1px),
+   linear-gradient(90deg,rgba(142,154,184,.10) 1px,transparent 1px),
+   linear-gradient(rgba(142,154,184,.05) 1px,transparent 1px),
+   linear-gradient(90deg,rgba(142,154,184,.05) 1px,transparent 1px);
+  background-size:96px 96px,96px 96px,24px 24px,24px 24px}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);padding-top:clamp(40px,7vw,88px);padding-bottom:clamp(40px,6vw,72px);align-items:center}
+.hero h1{font-size:clamp(36px,5.6vw,72px);line-height:1.04;font-weight:500}
+.hero .lead{margin-top:24px;font-size:clamp(17px,1.5vw,20px);color:#dfe0e6;max-width:34em}
+.hero .acts{margin-top:32px;display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;text-decoration:none;font:600 17px/1 var(--sans);padding:17px 24px}
+.btn.red{background:var(--red);color:#fff}
+.btn.red:hover{background:#b8231f}
+.btn.ghost{border:1.5px solid var(--steel);color:#fff}
+.btn.ghost:hover{background:rgba(142,154,184,.18)}
+.dim{margin-top:44px;display:flex;align-items:center;gap:12px;font:400 14px var(--cond);color:var(--steel);max-width:34em}
+.dim i{flex:1;height:9px;border-left:1px solid var(--steel);border-right:1px solid var(--steel);position:relative}
+.dim i:after{content:"";position:absolute;left:0;right:0;top:4px;border-top:1px solid var(--steel)}
+.dim span{white-space:nowrap}
+.sheet{position:relative;margin:0}
+.sheet img{width:100%;aspect-ratio:1/1.02;object-fit:cover;object-position:50% 30%;border:1px solid var(--steel);padding:10px;background:var(--mist)}
+.sheet figcaption{margin-top:10px;font:400 14px/1.35 var(--cond);color:var(--steel)}
+.sheet .sm{position:absolute;left:-34px;bottom:46px;width:42%;box-shadow:0 12px 30px rgba(0,0,0,.35)}
+.sheet .sm img{aspect-ratio:3/2;padding:6px}
+.sheet:before,.sheet:after{content:"";position:absolute;width:22px;height:22px;border:2px solid var(--red);z-index:2}
+.sheet:before{top:-8px;right:-8px;border-left:0;border-bottom:0}
+.sheet:after{display:none}
+
+/* ---------- цифры ---------- */
+.ledger{background:var(--mist);border-bottom:1px solid var(--line)}
+.ledger .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.ledger .wrap>div{padding:28px 22px 26px 0;border-right:1px solid var(--line);margin-right:22px}
+.ledger .wrap>div:last-child{border:0;margin:0}
+.ledger--hist{margin:0 0 clamp(32px,4vw,52px);background:var(--mist);border:1px solid var(--line);padding:0 24px}
+.ledger--hist .wrap{padding:0;max-width:none;width:auto}
+.ledger-cap{margin:0;padding-top:18px;font:600 14px var(--cond);letter-spacing:.04em;text-transform:uppercase;color:var(--steel-d)}
+.ledger b{display:block;font:500 clamp(24px,2.5vw,32px)/1.05 var(--serif);color:var(--ink);white-space:nowrap}
+.ledger span{display:block;margin-top:10px;font-size:15px;line-height:1.35}
+.ledger em{display:block;margin-top:6px;font:400 13px var(--cond);color:var(--steel-d);font-style:normal}
+
+/* ---------- секции ---------- */
+section{padding:clamp(56px,8vw,104px) 0}
+.head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:clamp(20px,4vw,64px);align-items:end;margin-bottom:clamp(28px,4vw,52px);padding-top:18px;border-top:2px solid var(--ink);position:relative}
+.head:before{content:"";position:absolute;top:-2px;left:0;width:72px;border-top:2px solid var(--red)}
+.head p{color:#4a4d66;max-width:36em}
+
+/* что делаем */
+.chain{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--line);background:#fff}
+.chain li{list-style:none;padding:24px 20px 26px;border-right:1px solid var(--line);font-size:16px;line-height:1.35}
+.chain li:last-child{border:0}
+.chain b{display:block;font:500 20px/1.2 var(--serif);margin-bottom:10px}
+.chain span{color:#4a4d66;font-size:15px}
+ul.chain{padding:0;margin:0}
+
+/* жилые дома */
+.houses{display:grid;grid-template-columns:repeat(12,1fr);gap:28px 22px}
+.house{grid-column:span 4;margin:0}
+.house.big{grid-column:span 8;grid-row:span 2;display:flex;flex-direction:column}
+.house img{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--silver)}
+.house.big img{aspect-ratio:auto;flex:1;min-height:300px;object-fit:cover}
+.house figcaption{padding-top:12px;border-bottom:1px solid var(--line);padding-bottom:14px}
+.house h3{font:500 18px/1.25 var(--serif)}
+.house dl{margin:8px 0 0;display:grid;grid-template-columns:auto 1fr;gap:2px 10px;font:400 14px/1.35 var(--cond);color:#4a4d66}
+.house dt{color:var(--steel-d)}
+.house dd{margin:0}
+
+/* Дружба */
+.druzhba{background:var(--red);color:#fff;margin-top:clamp(56px,7vw,96px)}
+.druzhba .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,72px);align-items:center;padding-top:clamp(36px,5vw,64px);padding-bottom:clamp(36px,5vw,64px)}
+.druzhba h3{font-size:clamp(26px,3.4vw,40px);line-height:1.1}
+.druzhba ul{margin:22px 0 26px;padding:0;list-style:none;display:grid;gap:10px}
+.druzhba li{padding-left:18px;position:relative;font-size:16.5px}
+.druzhba li:before{content:"";position:absolute;left:0;top:.7em;width:8px;border-top:2px solid #fff}
+.druzhba .lnk{color:#fff;font:600 16px var(--sans);text-underline-offset:4px}
+.druzhba img{width:100%;border:1px solid rgba(255,255,255,.5)}
+.druzhba small{display:block;margin-top:8px;font:400 13px var(--cond);opacity:.85}
+
+/* общественные здания */
+.pub{background:var(--ink);color:#fff}
+.pub .head{border-color:var(--steel)}
+.pub .head p{color:var(--silver)}
+.civic{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.civic figure{margin:0;grid-column:span 2}
+.civic figure:nth-child(1){grid-column:span 3}
+.civic figure:nth-child(2){grid-column:span 3}
+.civic img{width:100%;aspect-ratio:3/2;object-fit:cover;object-position:50% 40%;background:var(--ink-2)}
+.civic figure:nth-child(-n+2) img{aspect-ratio:16/10}
+.civic figure:last-child img{object-position:50% 50%}
+.civic figcaption{padding-top:10px;font:400 15px/1.3 var(--cond);color:var(--silver)}
+
+/* производство */
+.prod{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);background:#fff}
+.prod article{padding:30px 28px 32px;border-right:1px solid var(--line)}
+.prod article:last-child{border:0}
+.prod h3{font-size:24px;line-height:1.15}
+.prod .fact{margin:18px 0 0;padding-top:16px;border-top:1px solid var(--line);font-size:15.5px}
+.prod .fact b{font-family:var(--serif);font-weight:500;font-size:22px;display:block;margin-bottom:2px}
+.prod p.t{margin-top:12px;color:#4a4d66;font-size:15.5px}
+
+/* холдинг: таблица */
+.hold{background:var(--mist)}
+.tbl{width:100%;border-collapse:collapse;background:#fff;border-top:2px solid var(--ink)}
+.tbl th,.tbl td{text-align:left;vertical-align:top;padding:16px 18px;border-bottom:1px solid var(--line);font-size:15.5px;line-height:1.4}
+.tbl th{font:500 14px var(--cond);color:var(--steel-d);background:var(--paper)}
+.tbl td:first-child{font:500 17px/1.3 var(--serif);width:27%}
+.tbl td:first-child small{display:block;font:400 13px var(--cond);color:var(--steel-d);margin-top:4px}
+.tbl td.y{width:150px;font-family:var(--cond)}
+.tbl td.p{white-space:nowrap;width:150px;font-family:var(--cond)}
+.tbl a{text-decoration:none;border-bottom:1px solid var(--steel)}
+.note{margin-top:18px;font:400 14px var(--cond);color:var(--steel-d)}
+
+/* история */
+.tl{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(24px,5vw,80px)}
+.tl ol{margin:0;padding:0;list-style:none;border-left:2px solid var(--steel)}
+.tl ol>li{position:relative;padding:0 0 22px 28px;font-size:16.5px;line-height:1.45}
+.tl ol>li:before{content:"";position:absolute;left:-7px;top:.55em;width:12px;height:12px;background:var(--paper);border:2px solid var(--ink);border-radius:50%}
+.tl ol>li.aw:before{background:var(--red);border-color:var(--red)}
+.tl ol>li b{font:600 17px var(--cond);display:block;color:var(--steel-d)}
+.tl ol>li.aw b{color:var(--red)}
+.side h3{font-size:24px;margin-bottom:14px}
+.docs{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.docs a{display:block;padding:15px 0;border-bottom:1px solid var(--line);text-decoration:none;font-size:16px}
+.docs a:hover{color:var(--lav)}
+.docs small{display:block;font:400 13.5px var(--cond);color:var(--steel-d);margin-top:2px}
+.side p{font-size:15.5px;color:#4a4d66;margin-top:26px}
+
+/* контакты — основная надпись чертежа */
+.contacts{background:var(--ink);color:#fff;background-image:linear-gradient(rgba(142,154,184,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(142,154,184,.08) 1px,transparent 1px);background-size:48px 48px}
+.stamp{display:grid;grid-template-columns:1.1fr 1fr;border:2px solid var(--silver);background:rgba(36,38,58,.92)}
+.stamp>div{padding:0}
+.stamp .cell{display:grid;grid-template-columns:150px 1fr;border-bottom:1px solid rgba(223,224,230,.5)}
+.stamp .cell:last-child{border-bottom:0}
+.stamp dt{padding:15px 14px;font:400 14px/1.3 var(--cond);color:var(--steel);border-right:1px solid rgba(223,224,230,.5)}
+.stamp dd{margin:0;padding:13px 18px;font-size:18px;line-height:1.35}
+.stamp dd a{text-decoration:none}
+.stamp .big{font:500 clamp(26px,3vw,36px)/1.1 var(--serif)}
+.stamp .big a{border-bottom:2px solid var(--red)}
+.stamp .l{border-right:2px solid var(--silver);display:flex;flex-direction:column}
+.stamp .l dl{flex:1;display:flex;flex-direction:column}
+.stamp .l .cell{flex:1}
+.stamp .name{padding:26px 24px;border-bottom:2px solid var(--silver)}
+.stamp .name b{display:block;font:500 clamp(22px,2.4vw,30px)/1.15 var(--serif)}
+.stamp .name span{display:block;margin-top:8px;font:400 15px var(--cond);color:var(--steel)}
+.contacts h2{margin-bottom:28px}
+.contacts .head{border-color:var(--steel)}
+.contacts .head p{color:var(--silver)}
+
+footer{background:#1a1b2b;color:var(--steel);padding:22px 0;font:400 13.5px/1.4 var(--cond)}
+
+/* ---------- планшет и телефон ---------- */
+@media (max-width:980px){
+  .nav{display:none}
+  .tel{margin-left:auto}
+  .hero .wrap{grid-template-columns:1fr}
+  .sheet{max-width:560px}
+  .sheet .sm{left:-10px}
+  .ledger .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ledger .wrap>div:nth-child(2){border-right:0}
+  .ledger .wrap>div:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .ledger .wrap>div{margin-right:0;padding-left:0;padding-right:16px}
+  .ledger .wrap>div:nth-child(even){padding-left:18px}
+  .head{grid-template-columns:1fr;gap:12px}
+  .chain{grid-template-columns:1fr 1fr}
+  .chain li{border-bottom:1px solid var(--line)}
+  .chain li:nth-child(2n){border-right:0}
+  .houses{grid-template-columns:1fr 1fr}
+  .house,.house.big{grid-column:span 1}
+  .house.big{grid-column:span 2;grid-row:auto}
+  .house.big img{flex:none;aspect-ratio:16/9;min-height:0}
+  .druzhba .wrap{grid-template-columns:1fr}
+  .civic{grid-template-columns:1fr 1fr}
+  .civic figure,.civic figure:nth-child(1),.civic figure:nth-child(2){grid-column:span 1}
+  .prod{grid-template-columns:1fr}
+  .prod article{border-right:0;border-bottom:1px solid var(--line)}
+  .tl{grid-template-columns:1fr}
+  .stamp{grid-template-columns:1fr}
+  .stamp .l{border-right:0;border-bottom:2px solid var(--silver)}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .top .wrap{height:60px;gap:10px}
+  .brand img{width:38px;height:38px}
+  .brand{min-width:0;flex:1}
+  .brand b{font-size:13px;letter-spacing:0;white-space:nowrap}
+  .brand small{display:none}
+  .tel{padding:11px 10px;font-size:14.5px}
+  .hero h1{font-size:34px}
+  .btn{width:100%;text-align:center}
+  .dim{margin-top:30px}
+  .sheet .sm{display:none}
+  .ledger b{font-size:22px;white-space:normal}
+  .ledger span{font-size:14px}
+  .chain{grid-template-columns:1fr}
+  .chain li{border-right:0}
+  .houses{grid-template-columns:1fr}
+  .house.big{grid-column:span 1}
+  .house.big img{aspect-ratio:4/3}
+  .civic{grid-template-columns:1fr}
+  .tbl,.tbl tbody,.tbl tr,.tbl td{display:block;width:100%}
+  .tbl thead{display:none}
+  .tbl tr{padding:14px 0;border-bottom:1px solid var(--line)}
+  .tbl td{border:0;padding:3px 16px;width:100%!important}
+  .tbl td.y,.tbl td.p{white-space:normal}
+  .stamp .cell{grid-template-columns:110px 1fr}
+  .stamp dd{font-size:16px;padding:12px 12px}
+  .stamp dt{padding:13px 10px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Саранскстройзаказчик, наверх">
+      <img src="img/emblem.png" width="44" height="44" alt="">
+      <span><b>Саранскстройзаказчик</b><small>проектно-строительная холдинговая компания</small></span>
+    </a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#houses">Жилые дома</a>
+      <a href="#civic">Общественные здания</a>
+      <a href="#prod">Производство</a>
+      <a href="#holding">Холдинг</a>
+      <a href="#history">История</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="tel" href="tel:+78342477301">(8342) 47-73-01</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ПЕРВЫЙ ЭКРАН -->
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Здания, которые изменили облик Саранска</h1>
+      <p class="lead">Проектно-строительная холдинговая компания. Проектируем и строим жилые дома и общественные здания. Сами производим кирпич и железобетон.</p>
+      <div class="acts">
+        <a class="btn red" href="tel:+78342477301">Позвонить (8342) 47-73-01</a>
+        <a class="btn ghost" href="#houses">Смотреть дома</a>
+      </div>
+      <div class="dim" aria-hidden="true"><i></i><span>Основана 27 июня 1994 года</span></div>
+    </div>
+    <figure class="sheet">
+      <img src="img/obj-sobor.jpg" width="900" height="853" alt="Кафедральный собор святого праведного воина Феодора Ушакова в Саранске">
+      <figcaption>Кафедральный собор святого праведного воина Феодора Ушакова</figcaption>
+      <div class="sm">
+        <img src="img/obj-kolonnada.jpg" width="900" height="590" alt="Мемориальная колоннада">
+      </div>
+    </figure>
+  </div>
+</div>
+
+<!-- ЧТО ДЕЛАЕМ -->
+<section id="what">
+  <div class="wrap">
+    <div class="head">
+      <h2>От проекта до ключей</h2>
+      <p>Холдинг объединяет дочерние общества с разными видами деятельности. Работа идёт по замкнутой технологической цепи: от проектирования и строительства до обслуживания построенных объектов.</p>
+    </div>
+    <ul class="chain">
+      <li><b>Проектирование</b><span>Проектные работы по объектам жилищного и гражданского назначения.</span></li>
+      <li><b>Заказчик-застройщик</b><span>Выполнение функций заказчика-застройщика.</span></li>
+      <li><b>Строительство</b><span>Строительно-монтажные работы. Жилые дома и объекты гражданского назначения.</span></li>
+      <li><b>Материалы</b><span>Производство строительных материалов и конструкций.</span></li>
+      <li><b>Реализация жилья</b><span>Продажа квартир через специализированного застройщика «Саранскстройинвест».</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ЖИЛЫЕ ДОМА -->
+<section id="houses" style="padding-top:0;padding-bottom:0">
+  <div class="wrap">
+    <div class="head">
+      <h2>Жилые дома, построенные холдингом</h2>
+      <p>Пятнадцать объектов с раздела «Жилищное строительство». Для каждого указаны генеральный проектировщик и генеральный подрядчик, как на сайте компании.</p>
+    </div>
+    <div class="houses">
+      <figure class="house big"><img src="img/home-11.jpg" width="900" height="675" alt="Жилой дом №2 по ул. Коммунистической"><figcaption><h3>Жилой дом №2 по ул. Коммунистической</h3><dl><dt>Проект</dt><dd>ОАО «Саранскстройзаказчик»</dd><dt>Подряд</dt><dd>ООО «Жилстрой», дочернее общество</dd></dl></figcaption></figure>
+      <figure class="house"><img src="img/home-3.jpg" width="900" height="565" alt="Жилой дом по ул. Рабочей"><figcaption><h3>Жилой дом по ул. Рабочей</h3><dl><dt>Проект</dt><dd>ОАО «Саранскстройзаказчик»</dd><dt>Подряд</dt><dd>ООО «Жилстрой»</dd></dl></figcaption></figure>
+      <figure class="house"><img src="img/home-4.jpg" width="900" height="563" alt="Массив жилых домов в районе Заречный"><figcaption><h3>Массив жилых домов в районе Заречный</h3><dl><dt>Проект</dt><dd>ОАО «Саранскстройзаказчик»</dd><dt>Подряд</dt><dd>ООО «Жилстрой»</dd></dl></figcaption></figure>
+      <figure class="house"><img src="img/home-5.jpg" width="900" height="909" alt="Жилой дом по ул. Коваленко"><figcaption><h3>Жилой дом по ул. Коваленко</h3><dl><dt>Проект</dt><dd>ОАО «Саранскстройзаказчик»</dd><dt>Подряд</dt><dd>ООО «Жилстрой»</dd></dl></figcaption></figure>
+      <figure class="house"><img src="img/home-6.jpg" width="900" height="635" alt="Жилой дом по ул. Демократической"><figcaption><h3>Жилой дом по ул. Демократической</h3><dl><dt>Проект</dt><dd>ОАО «Саранскстройзаказчик»</dd><dt>Подряд</dt><dd>ООО «Жилстрой»</dd></dl></figcaption></figure>
+      <figure class="house"><img src="img/home-7.jpg" width="900" height="551" alt="Жилой дом по ул. Волгоградской"><figcaption><h3>Жилой дом по ул. Волгоградской</h3><dl><dt>Проект</dt><dd>ООО «Жилагропромпроект»</dd><dt>Подряд</dt><dd>ООО «Саранскжилстрой»</dd></dl></figcaption></figure>
+      <figure class="house"><img src="img/home-8.jpg" width="900" height="634" alt="Жилой дом по ул. Большевистской"><figcaption><h3>Жилой дом по ул. Большевистской</h3><dl><dt>Проект</dt><dd>ОАО «Саранскстройзаказчик»</dd><dt>Подряд</dt><dd>ООО «Жилстрой»</dd></dl></figcaption></figure>
+      <figure class="house"><img src="img/home-1.jpg" width="900" height="628" alt="Жилой дом по ул. Демократической"><figcaption><h3>Жилой дом по ул. Демократической</h3><dl><dt>Проект</dt><dd>ОАО «Саранскстройзаказчик»</dd><dt>Подряд</dt><dd>ООО «Жилстрой»</dd></dl></figcaption></figure>
+      <figure class="house"><img src="img/home-10.jpg" width="900" height="817" alt="Жилой дом по ул. Коммунистической"><figcaption><h3>Жилой дом по ул. Коммунистической</h3><dl><dt>Проект</dt><dd>ОАО «Саранскстройзаказчик»</dd><dt>Подряд</dt><dd>ООО «Жилстрой»</dd></dl></figcaption></figure>
+      <figure class="house"><img src="img/home-12.jpg" width="900" height="626" alt="Жилой дом по ул. Советской"><figcaption><h3>Жилой дом по ул. Советской</h3><dl><dt>Проект</dt><dd>ОАО «Саранскстройзаказчик»</dd><dt>Подряд</dt><dd>ООО «Жилстрой»</dd></dl></figcaption></figure>
+      <figure class="house"><img src="img/home-13.jpg" width="900" height="636" alt="Жилой дом со встроенно-пристроенной стоянкой по ул. Московской"><figcaption><h3>Жилой дом со встроенно-пристроенной стоянкой открытого типа по ул. Московской</h3><dl><dt>Проект</dt><dd>ОАО «Саранскстройзаказчик»</dd><dt>Подряд</dt><dd>ООО «Жилстрой»</dd></dl></figcaption></figure>
+      <figure class="house"><img src="img/home-15.jpg" width="900" height="550" alt="Жилой дом по ул. Республиканской"><figcaption><h3>Жилой дом по ул. Республиканской</h3><dl><dt>Проект</dt><dd>ОАО «Мордовгражданпроект»</dd><dt>Подряд</dt><dd>ООО «Саранскгражданстрой»</dd></dl></figcaption></figure>
+      <figure class="house"><img src="img/home-17.jpg" width="900" height="599" alt="Жилой дом по ул. Димитрова"><figcaption><h3>Жилой дом по ул. Димитрова</h3><dl><dt>Проект</dt><dd>ОАО «Мордовгражданпроект»</dd><dt>Подряд</dt><dd>ООО «Саранскгражданстрой»</dd></dl></figcaption></figure>
+      <figure class="house"><img src="img/home-16.jpg" width="900" height="602" alt="Посёлок Звёздный"><figcaption><h3>Посёлок Звёздный, район с. Берсеневка</h3><dl><dt>Проект</dt><dd>ООО «Жилагропромпроект»</dd><dt>Подряд</dt><dd>ООО «Саранскгражданстрой»</dd></dl></figcaption></figure>
+      <figure class="house"><img src="img/home-14.jpg" width="900" height="599" alt="Жилой дом с блоком обслуживания по ул. Коммунистической"><figcaption><h3>Жилой дом с блоком обслуживания по ул. Коммунистической</h3><dl><dt>Проект</dt><dd>ОАО «Саранскстройзаказчик»</dd><dt>Подряд</dt><dd>ООО «Жилстрой»</dd></dl></figcaption></figure>
+    </div>
+  </div>
+
+  <!-- Квартал Дружба -->
+  <div class="druzhba" id="druzhba">
+    <div class="wrap">
+      <div>
+        <h3>Жилой квартал «Дружба»</h3>
+        <ul>
+          <li>Дома №51, 51а, 51б, 55 и 55а у улиц Волгоградской и Косарева.</li>
+          <li>Упор на 1–2-комнатные квартиры. Потолки 2,7 метра. Кухни 12–13&nbsp;м².</li>
+          <li>Стены из кирпича: наружные 641 мм, внутренние 380 мм. Перекрытия из сборных железобетонных плит.</li>
+          <li>Окна из ПВХ-профиля с двухкамерным стеклопакетом. Лифт с кабиной глубиной 2,1 метра.</li>
+        </ul>
+        <a class="lnk" href="http://druzhba.sszhol.ru" rel="noopener">Сайт квартала druzhba.sszhol.ru</a>
+      </div>
+      <figure style="margin:0">
+        <img src="img/druzhba-plan.png" width="670" height="394" alt="Генплан квартала «Дружба»: дома 51, 51а, 51б, 55 и 55а">
+        <small>Схема квартала с сайта druzhba.sszhol.ru</small>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ОБЩЕСТВЕННЫЕ ЗДАНИЯ -->
+<section id="civic" class="pub">
+  <div class="wrap">
+    <div class="head">
+      <h2>Общественные здания и сооружения</h2>
+      <p>Здания, построенные за годы существования компании, изменили облик города. Десять объектов из раздела «Общественные здания и сооружения».</p>
+    </div>
+    <div class="civic">
+      <figure><img src="img/obj-rkb.jpg" width="900" height="624" alt="Республиканская клиническая больница"><figcaption>Республиканская клиническая больница</figcaption></figure>
+      <figure><img src="img/obj-zags.jpg" width="900" height="581" alt="Дворец бракосочетания"><figcaption>Дворец бракосочетания</figcaption></figure>
+      <figure><img src="img/obj-doska-pocheta.jpg" width="400" height="267" alt="Республиканская Доска почёта"><figcaption>Республиканская Доска почёта</figcaption></figure>
+      <figure><img src="img/obj-tamozhnya.jpg" width="900" height="629" alt="Мордовская таможня и научно-исследовательский институт"><figcaption>Мордовская таможня и научно-исследовательский институт языка и литературы истории и экономики при Правительстве Республики Мордовия</figcaption></figure>
+      <figure><img src="img/obj-dom-finansov.jpg" width="900" height="817" alt="Дом финансов"><figcaption>Дом финансов</figcaption></figure>
+      <figure><img src="img/obj-gimnaziya12.jpg" width="900" height="634" alt="Гимназия №12"><figcaption>Гимназия №12</figcaption></figure>
+      <figure><img src="img/obj-dvorec-sporta.jpg" width="900" height="669" alt="Реконструированный дворец спорта"><figcaption>Реконструированный дворец спорта</figcaption></figure>
+      <figure><img src="img/obj-muzey-erzi.jpg" width="640" height="236" alt="Реконструированный музей имени Эрьзи"><figcaption>Реконструированный музей имени Эрьзи</figcaption></figure>
+    </div>
+    <p class="note" style="color:var(--steel)">Кафедральный собор святого праведного воина Феодора Ушакова и Мемориальная колоннада показаны на первом экране.</p>
+  </div>
+</section>
+
+<!-- ПРОИЗВОДСТВО -->
+<section id="prod">
+  <div class="wrap">
+    <div class="head">
+      <h2>Свои материалы для своих объектов</h2>
+      <p>Собственное производство улучшает качество и сокращает сроки строительства. В 2006 году производство строительных материалов дало более 28 процентов выполненных работ и услуг.</p>
+    </div>
+    <div class="prod">
+      <article>
+        <h3>Лицевой и теплоэффективный кирпич</h3>
+        <p class="t">ООО «Саранский завод лицевого кирпича». Оборудование французской фирмы «Серик». Сырьё: глина и песок. Завод открыт 17 февраля 2004 года.</p>
+        <p class="fact"><b>20 млн штук в год</b>проектная производительность в условном кирпиче</p>
+        <p class="fact"><b>Стена 64 см</b>из теплоэффективного кирпича. Из обычного кирпича стена с тем же уровнем теплозащиты толще метра. Блок 138×380 повышает производительность труда минимум в два раза.</p>
+      </article>
+      <article>
+        <h3>Сборный железобетон</h3>
+        <p class="t">ОАО «Железобетон». Завод запущен в декабре 1962 года. Линия «Tensiland» делает плиты перекрытий пустотного настила нужной заказчику длины.</p>
+        <p class="fact"><b>до 9 м и до 12 м</b>длина плиты при высоте 220 мм и 300 мм</p>
+        <p class="fact"><b>1999 год</b>завод первым в стране получил сертификат соответствия на такие плиты после испытаний Госстроя России</p>
+      </article>
+      <article>
+        <h3>Стеновые блоки и бетонные изделия</h3>
+        <p class="t">Блоки из цементно-песчаной смеси для стен и перегородок жилых, общественных и производственных зданий. Бортовые камни. Стеновые блоки из пенобетона.</p>
+        <p class="fact"><b>Оборудование «Адлер»</b>французская фирма. Линия по производству стеновых блоков из ячеистых бетонов позволила увеличить темпы строительства.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ХОЛДИНГ -->
+<section id="holding" class="hold">
+  <div class="wrap">
+    <div class="head">
+      <h2>Предприятия холдинга</h2>
+      <p>В состав АО ПСХК «Саранскстройзаказчик» входят общества с разными видами деятельности. Описания и телефоны взяты со страниц предприятий на sszhol.ru.</p>
+    </div>
+    <table class="tbl">
+      <thead><tr><th>Предприятие</th><th>Чем занимается</th><th>Основано</th><th>Телефон</th></tr></thead>
+      <tbody>
+        <tr><td>ОАО «Мордовгражданпроект»<small>проектный институт</small></td><td>Проектная документация для строительства и реконструкции зданий, инженерных коммуникаций, дорог, благоустройства.</td><td class="y">12 января 1931</td><td class="p"><a href="tel:+78342248041">(8342) 24-80-41</a></td></tr>
+        <tr><td>ОАО «Мордовское земпредприятие»<small>«ВолговятНИИгипрозем»</small></td><td>Геодезические изыскания, межевание, кадастровый учёт, землеустройство, инвентаризация земель и недвижимости.</td><td class="y">26 июня 1961</td><td class="p">—</td></tr>
+        <tr><td>ОАО «Железобетон»</td><td>Сборный железобетон и бетонные изделия.</td><td class="y">завод с декабря 1962</td><td class="p"><a href="tel:+78342294849">(8342) 29-48-49</a></td></tr>
+        <tr><td>ООО «Стройтехтранс»<small>в меню старого сайта: «Управление механизации нулевых работ»</small></td><td>Транспортные услуги, строительная техника и механизмы, реализация и хранение ГСМ, заправочные станции, строительно-монтажные и ремонтные работы.</td><td class="y">3 сентября 1998</td><td class="p"><a href="tel:+78342294950">(8342) 29-49-50</a></td></tr>
+        <tr><td>ООО «Стройохрана»</td><td>Охрана имущества и граждан, в том числе при транспортировке. Порядок на массовых мероприятиях.</td><td class="y">3 декабря 2001</td><td class="p"><a href="tel:+78342240421">(8342) 24-04-21</a></td></tr>
+        <tr><td>ООО «Саранский завод лицевого кирпича»</td><td>Лицевой и теплоэффективный кирпич по технологии «Серик».</td><td class="y">зарегистрировано 8 октября 2002</td><td class="p">—</td></tr>
+        <tr><td>ООО «Агросоюз»</td><td>Мясо и молоко, зерновые, плодовые и ягодные культуры. Более 8 500 га сельхозугодий в Рузаевском районе.</td><td class="y">5 апреля 2004</td><td class="p">(8-251-22) 5-93-30</td></tr>
+        <tr><td>ООО «Саранскстройинвест»<small>специализированный застройщик</small></td><td>Инвестирование строительства, продажа квартир, ипотека, жилищные субсидии, воинские сертификаты.</td><td class="y">5 августа 2005</td><td class="p"><a href="tel:+78342476289">(8342) 47-62-89</a></td></tr>
+        <tr><td>ООО «Энергосбыт»</td><td>Продажа электроэнергии гражданам и другим потребителям. Горячая линия по вопросам поставки.</td><td class="y">24 января 2006</td><td class="p"><a href="tel:+78342777926">(8342) 77-79-26</a></td></tr>
+        <tr><td>ОАО «Рыбхоз «Левжинский»</td><td>Воспроизводство рыбы и водных биоресурсов. Рузаевский район, пос. Рыбный.</td><td class="y">18 июня 2008</td><td class="p">—</td></tr>
+      </tbody>
+    </table>
+    <p class="note">На странице «Предприятия холдинга» старого сайта также указано ООО «Жилищно-эксплуатационная компания». Отдельной страницы у него нет.</p>
+  </div>
+</section>
+
+<!-- ИСТОРИЯ -->
+<section id="history">
+  <div class="wrap">
+    <div class="head">
+      <h2>История и награды</h2>
+      <p>Компания учреждена в 1994 году в результате акционирования муниципального предприятия «Управление строительства г. Саранска».</p>
+    </div>
+    <div class="ledger ledger--hist">
+      <p class="ledger-cap">Цифры из истории компании, с годами</p>
+      <div class="wrap">
+        <div><b>246,7 тыс. м²</b><span>жилья сдано за годы с 1994 по 2006</span><em>по данным раздела «О компании»</em></div>
+        <div><b>297 квартир</b><span>построено в 2006 году, 18 199 м²</span><em>по данным раздела «О компании»</em></div>
+        <div><b>20 млн штук</b><span>кирпича в год: проектная мощность завода</span><em>запущен в I квартале 2004 года</em></div>
+        <div><b>2 044 человека</b><span>работали в компании на 1 декабря 2007 года</span><em>по данным раздела «О компании»</em></div>
+      </div>
+    </div>
+    <div class="tl">
+      <ol>
+        <li><b>27 июня 1994</b>Учреждено ОАО «Саранскстройзаказчик».</li>
+        <li><b>30 сентября 1998</b>Преобразовано в ОАО «Проектно-строительная холдинговая компания «Саранскстройзаказчик».</li>
+        <li><b>1999</b>Первая продукция цеха оконных и дверных блоков из ПВХ-профилей и стеклопакетов.</li>
+        <li><b>2000</b>Введён комплекс деревообрабатывающего оборудования немецкой фирмы Weinig.</li>
+        <li class="aw"><b>2002 и 2003</b>Победитель Всероссийского конкурса на лучшую строительную организацию. Специальный диплом «За достижение высокой эффективности и конкурентоспособности». Рейтинг 150 лучших строительных организаций России.</li>
+        <li><b>Первый квартал 2004</b>Введён кирпичный завод по французской технологии.</li>
+        <li><b>Март 2004</b>Создано ООО «Термотехника»: монтаж котлов, газового и электрического оборудования, систем теплоснабжения.</li>
+        <li class="aw"><b>2006</b>Золотой сертификат и приз «Предприятие года». Диплом III степени X Всероссийского конкурса на лучшую строительную организацию.</li>
+        <li class="aw"><b>2002–2006</b>Победитель среди строительных организаций Республики Мордовия в трудовом соперничестве коллективов.</li>
+      </ol>
+      <div class="side">
+        <h3>Документы</h3>
+        <ul class="docs">
+          <li><a href="http://disclosure.sszhol.ru" rel="noopener">Раскрытие информации эмитентом<small>disclosure.sszhol.ru</small></a></li>
+          <li><a href="http://sszhol.ru/sobr2016.pdf" rel="noopener">Сообщение о проведении общего собрания акционеров от 21 марта 2016 года<small>PDF</small></a></li>
+          <li><a href="http://sszhol.ru/files/prod_imush_ssz.doc" rel="noopener">Объявление о продаже неиспользуемого имущества, апрель 2022 года<small>здания и сооружения, земельные участки, строительная техника, станки, самоходная и автомобильная техника, файл DOC</small></a></li>
+        </ul>
+        <p>Благотворительность: в 2007–2008 годах компания направила 777 500 рублей общественным и образовательным организациям, учреждениям культуры и социальной защиты.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- КОНТАКТЫ -->
+<section id="contacts" class="contacts">
+  <div class="wrap">
+    <div class="head">
+      <h2>Контакты</h2>
+      <p>Телефоны приёмной и подразделений со страницы «Контакты» сайта компании.</p>
+    </div>
+    <div class="stamp">
+      <div class="l">
+        <div class="name"><b>АО ХК «Саранскстройзаказчик»</b><span>Проектно-строительная холдинговая компания</span></div>
+        <dl style="margin:0">
+          <div class="cell"><dt>Адрес</dt><dd>430005, Республика Мордовия, г. Саранск, ул. Советская, 52</dd></div>
+          <div class="cell"><dt>Дата основания</dt><dd>27 июня 1994 года</dd></div>
+          <div class="cell"><dt>Вид деятельности</dt><dd>Строительство жилых и нежилых зданий</dd></div>
+        </dl>
+      </div>
+      <dl style="margin:0">
+        <div class="cell"><dt>Телефон</dt><dd class="big"><a href="tel:+78342477301">(8342) 47-73-01</a></dd></div>
+        <div class="cell"><dt>Факс</dt><dd>(8342) 47-54-33</dd></div>
+        <div class="cell"><dt>Эл. почта</dt><dd><a href="mailto:oaossz@gmail.com">oaossz@gmail.com</a></dd></div>
+        <div class="cell"><dt>Правовое управление</dt><dd><a href="tel:+78342475830">(8342) 47-58-30</a></dd></div>
+        <div class="cell"><dt>Хоз. отдел</dt><dd><a href="tel:+78342475878">(8342) 47-58-78</a></dd></div>
+        <div class="cell"><dt>Покупка жилья</dt><dd><a href="tel:+78342476289">(8342) 47-62-89</a>, <a href="tel:+78342475703">47-57-03</a><br><span style="font:400 14px var(--cond);color:var(--steel)">ООО «Саранскстройинвест», ул. Советская, 52 (здание компании)</span></dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">Демо-версия. Материалы принадлежат АО ХК «Саранскстройзаказчик».</div>
+</footer>
+
+</body>
+</html>

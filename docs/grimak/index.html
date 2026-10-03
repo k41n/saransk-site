@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Гри-Мак: знатная рыба, солод и крафт-мешки, Саранск</title>
+<meta name="description" content="ООО «Гри-Мак», Саранск: мраморный сом с собственной аквафермы, копчёная, солёная и вяленая рыба, ржаной солод, крафт-мешки. Фирменные магазины на Студенческой и Ярославской.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 50V4A46 46 0 0 0 50 96Z' fill='%23127036'/%3E%3Cpath d='M50 50V4A46 46 0 0 1 96 50Z' fill='%2303709E'/%3E%3Cpath d='M50 50H96A46 46 0 0 1 50 96Z' fill='%23CD9A1B'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@500;600;700&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#127036;
+  --green-2:#3D945C;
+  --green-d:#0C4A25;
+  --green-dd:#08291A;
+  --blue:#03709E;
+  --blue-d:#04516F;
+  --amber:#CD9A1B;
+  --amber-d:#8A6410;
+  --orange:#E65802;
+  --orange-d:#C24A00;
+  --paper:#F2F6F3;
+  --paper-2:#E3ECE6;
+  --ink:#10211A;
+  --ink-2:#4A5C53;
+  --line:#CBD8CF;
+  --head:"Fira Sans Extra Condensed","Arial Narrow",sans-serif;
+  --body:"Golos Text","Segoe UI",Arial,sans-serif;
+  --gut:clamp(16px,4vw,48px);
+  --max:1240px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--body);font-size:17px;line-height:1.6;color:var(--ink);background:var(--paper);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--head);font-weight:600;line-height:1.02;letter-spacing:.005em}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:54px;padding:0 28px;border-radius:999px;font-weight:600;font-size:17px;text-decoration:none;border:2px solid transparent;transition:background .2s,color .2s,border-color .2s}
+.btn-primary{background:var(--orange);color:#fff}
+.btn-primary:hover{background:var(--orange-d)}
+.btn-ghost{border-color:rgba(255,255,255,.55);color:#fff}
+.btn-ghost:hover{background:#fff;color:var(--green-dd)}
+.btn-dark{border-color:var(--ink);color:var(--ink)}
+.btn-dark:hover{background:var(--ink);color:#fff}
+
+/* header */
+.top{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:78px}
+.top img{height:50px;width:auto}
+.nav{display:flex;gap:26px;font-weight:500;font-size:15.5px}
+.nav a{text-decoration:none;padding:6px 0;border-bottom:2px solid transparent}
+.nav a:hover{border-color:var(--orange)}
+.top-tel{font-family:var(--head);font-weight:600;font-size:23px;text-decoration:none;white-space:nowrap;color:var(--green-d)}
+
+/* hero */
+.hero{background:var(--green-dd);color:#fff;overflow:hidden;position:relative}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:20px;min-height:640px;padding-top:56px;padding-bottom:56px}
+.hero h1{font-size:clamp(50px,7.2vw,104px);font-weight:700;line-height:.94;margin-bottom:26px}
+.hero p.lead{font-size:clamp(18px,1.6vw,21px);max-width:34em;color:#D3E4D9;margin-bottom:34px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:14px}
+.hero .note{margin-top:30px;display:flex;align-items:center;gap:12px;color:#A9C6B4;font-size:15.5px}
+.hero .note i{display:block;width:34px;height:3px;background:var(--amber)}
+.disc{width:100%;max-width:600px;justify-self:end;aspect-ratio:1}
+.disc svg{width:100%;height:100%;display:block;overflow:visible}
+.disc a{outline-offset:-4px}
+.sector{transform-box:fill-box;transform-origin:50% 50%;animation:pop .9s cubic-bezier(.2,.8,.2,1) both}
+.sector.s2{animation-delay:.18s}
+.sector.s3{animation-delay:.34s}
+@keyframes pop{from{opacity:0;transform:scale(.6) rotate(-14deg)}to{opacity:1;transform:none}}
+.disc text{font-family:var(--head);font-weight:600;font-size:32px;letter-spacing:.01em}
+.disc .sector:hover image{filter:brightness(1.08)}
+
+/* sections */
+section{padding:clamp(64px,9vw,120px) 0}
+.sec-head{max-width:760px;margin-bottom:clamp(32px,5vw,56px)}
+.sec-head h2{font-size:clamp(38px,5.2vw,68px);margin-bottom:16px}
+.sec-head p{color:var(--ink-2);font-size:18px;max-width:40em}
+.dark .sec-head p{color:#B9D2C2}
+
+/* fish grid */
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.cat{position:relative;border-radius:22px;overflow:hidden;min-height:340px;display:flex;align-items:flex-end;background:var(--green-dd);color:#fff;isolation:isolate}
+.cat img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .6s}
+.cat::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(5,25,15,.92) 0%,rgba(5,25,15,.55) 42%,rgba(5,25,15,0) 72%)}
+.cat:hover img{transform:scale(1.04)}
+.cat div{padding:28px}
+.cat h3{font-size:clamp(30px,3vw,40px);margin-bottom:8px}
+.cat p{font-size:15.5px;line-height:1.5;color:#E1EEE6;max-width:34em}
+.c1{grid-column:span 7;min-height:460px}
+.c2{grid-column:span 5;min-height:460px}
+.c3{grid-column:span 5}
+.c4{grid-column:span 7}
+.c5{grid-column:span 6}
+.c6{grid-column:span 6}
+.c4 .tag{display:inline-block;background:var(--orange);color:#fff;font-weight:600;font-size:14px;padding:3px 12px;border-radius:99px;margin-bottom:10px}
+
+.goods{margin-top:clamp(48px,6vw,80px)}
+.goods h3{font-size:clamp(30px,3.4vw,44px);margin-bottom:6px}
+.goods>p{color:var(--ink-2);font-size:15px;margin-bottom:24px}
+.goods ul{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.good{background:#fff;border-radius:18px;overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column}
+.good img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.good div{padding:16px 20px 20px;display:flex;flex-direction:column;gap:6px;flex:1;justify-content:space-between}
+.good h4{font-size:17px;font-weight:500;line-height:1.35}
+.price{font-family:var(--head);font-weight:700;font-size:32px;color:var(--green-d);line-height:1}
+.price small{font-family:var(--body);font-weight:400;font-size:14px;color:var(--ink-2)}
+
+/* aqua */
+.dark{background:var(--green-d);color:#fff}
+.aqua .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,5vw,72px);align-items:center}
+.aqua .pic{position:relative}
+.aqua .pic img{border-radius:22px;width:100%;aspect-ratio:1/1;object-fit:cover;object-position:60% 50%}
+.aqua .pic .big{position:absolute;right:-18px;bottom:28px;background:var(--amber);color:var(--green-dd);padding:16px 24px;border-radius:16px;font-family:var(--head);font-weight:700;font-size:56px;line-height:.95}
+.aqua .pic .big span{display:block;font-family:var(--body);font-weight:500;font-size:14px;line-height:1.3;margin-top:6px}
+.aqua h2{font-size:clamp(38px,5vw,64px);margin-bottom:18px}
+.aqua .txt{color:#C9DDD0;margin-bottom:28px;max-width:36em}
+.ben{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ben li{border-top:2px solid var(--green-2);padding-top:12px;font-size:16px;line-height:1.45}
+.ben b{display:block;font-family:var(--head);font-weight:600;font-size:23px;margin-bottom:2px}
+
+/* b2b */
+.b2b .cols{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.panel{border-radius:24px;padding:clamp(24px,3vw,40px);display:flex;flex-direction:column;gap:18px}
+.panel h3{font-size:clamp(34px,3.6vw,48px)}
+.panel.solod{background:var(--blue);color:#fff}
+.panel.kraft{background:#fff;border:2px solid var(--amber)}
+.panel img{border-radius:14px;width:100%;aspect-ratio:16/8;object-fit:cover}
+.panel p{font-size:16.5px}
+.solod p{color:#DDF0F8}
+.steps{list-style:none;counter-reset:s;display:grid;gap:0}
+.steps li{counter-increment:s;display:grid;grid-template-columns:40px 1fr;gap:12px;padding:10px 0;border-top:1px solid rgba(255,255,255,.3);font-size:16px;line-height:1.4}
+.steps li::before{content:counter(s);font-family:var(--head);font-weight:700;font-size:26px;line-height:1}
+.uses{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.uses li{border:1.5px solid var(--amber);color:var(--amber-d);border-radius:99px;padding:3px 14px;font-size:15px;font-weight:500}
+.facts{display:grid;gap:8px;font-size:16px}
+.facts li{list-style:none;padding-left:26px;position:relative}
+.facts li::before{content:"";position:absolute;left:0;top:.6em;width:14px;height:3px;background:var(--amber)}
+.panel .btn{align-self:flex-start;margin-top:auto}
+.panel.solod .btn{background:#fff;color:var(--blue-d)}
+.panel.solod .btn:hover{background:var(--green-dd);color:#fff}
+
+/* about */
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,72px)}
+.about h2{font-size:clamp(38px,5.2vw,68px);margin-bottom:20px}
+.about .lead{color:var(--ink-2);margin-bottom:24px}
+.milestones{list-style:none;border-top:1px solid var(--line)}
+.milestones li{display:grid;grid-template-columns:96px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);font-size:16px}
+.milestones b{font-family:var(--head);font-weight:700;font-size:30px;line-height:1.1;color:var(--green)}
+.quotes{display:grid;gap:16px;align-content:start}
+.q{background:#fff;border-radius:18px;padding:26px 28px;border-left:6px solid var(--green)}
+.q:nth-child(2){border-color:var(--blue)}
+.q p{font-size:17px;margin-bottom:12px}
+.q cite{font-style:normal;font-weight:600;font-size:15px;color:var(--ink-2)}
+
+/* shops */
+.shops .grid{gap:20px}
+.shop{grid-column:span 6;background:#fff;border-radius:22px;overflow:hidden;border:1px solid var(--line)}
+.shop img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.shop div{padding:22px 26px 26px}
+.shop h3{font-size:30px;margin-bottom:6px}
+.shop address{font-style:normal;color:var(--ink-2);margin-bottom:14px}
+.shop a.map{font-weight:600;color:var(--blue-d)}
+.deliv{margin-top:20px;background:var(--orange);color:#fff;border-radius:22px;padding:26px clamp(22px,3vw,40px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+.deliv strong{font-family:var(--head);font-weight:600;font-size:clamp(26px,3vw,38px);line-height:1.1}
+.deliv span{font-size:15px;opacity:.95}
+
+/* contacts */
+.contacts{background:var(--green-dd);color:#fff;padding-bottom:0}
+.contacts .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,72px);padding-bottom:clamp(56px,7vw,90px)}
+.contacts h2{font-size:clamp(40px,5.6vw,76px);margin-bottom:22px}
+.contacts .tel{display:block;font-family:var(--head);font-weight:700;font-size:clamp(40px,6vw,68px);line-height:1;text-decoration:none;margin-bottom:14px}
+.contacts .tel:hover{color:var(--amber)}
+.contacts dl{display:grid;gap:18px;align-content:start}
+.contacts dt{color:#8FB19D;font-size:14.5px}
+.contacts dd{font-size:19px}
+.contacts dd a{text-underline-offset:4px}
+footer{background:#051A10;color:#8FB19D;font-size:14px;padding:20px 0}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-between}
+
+/* mobile */
+@media (max-width:1000px){
+  .nav{display:none}
+  .hero .wrap{grid-template-columns:1fr;min-height:0;padding-top:40px;padding-bottom:24px}
+  .disc{justify-self:center;max-width:460px;margin-top:8px}
+  .aqua .wrap,.b2b .cols,.about .wrap,.contacts .wrap{grid-template-columns:1fr}
+  .aqua .pic .big{right:12px}
+  .goods ul{grid-template-columns:1fr 1fr}
+}
+@media (max-width:720px){
+  body{font-size:16px}
+  .top .wrap{min-height:64px}
+  .top img{height:40px}
+  .top-tel{font-size:20px}
+  .grid{gap:12px}
+  .c1,.c2,.c3,.c4,.c5,.c6{grid-column:span 12;min-height:300px}
+  .c1,.c2{min-height:340px}
+  .cat div{padding:22px}
+  .goods ul{grid-template-columns:1fr}
+  .ben{grid-template-columns:1fr}
+  .shop{grid-column:span 12}
+  .milestones li{grid-template-columns:76px 1fr}
+  .hero .cta .btn{width:100%}
+}
+@media (max-width:380px){
+  .top-tel{font-size:17px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .sector{animation:none}
+  .cat img{transition:none}
+}
+@media (max-width:560px){.top-tel{display:inline-block;padding:12px 0}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a href="#" aria-label="Гри-Мак, на главную"><img src="img/logo.png" alt="Гри-Мак. Только экопродукты" width="145" height="50"></a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#fish">Рыба</a>
+      <a href="#aqua">Акваферма</a>
+      <a href="#b2b">Солод и мешки</a>
+      <a href="#about">О компании</a>
+      <a href="#shops">Магазины</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="top-tel" href="tel:+78342325922">8 (8342) 32-59-22</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap">
+    <div>
+      <h1 id="h1">Знатная рыба из Саранска</h1>
+      <p class="lead">Мраморный сом с нашей аквафермы, копчёная, солёная и вяленая рыба из собственных цехов. Берите в фирменных магазинах или заказывайте с доставкой.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="tel:+78342325922">Позвонить 8 (8342) 32-59-22</a>
+        <a class="btn btn-ghost" href="#fish">Смотреть рыбу</a>
+      </div>
+      <p class="note"><i></i>Только экопродукты</p>
+    </div>
+
+    <div class="disc">
+      <svg viewBox="0 0 600 600" role="img" aria-label="Три направления Гри-Мак: рыба, солод, крафт-мешки">
+        <defs>
+          <clipPath id="cf"><path d="M300 300V8A292 292 0 0 0 300 592Z"/></clipPath>
+          <clipPath id="cs"><path d="M300 300V8A292 292 0 0 1 592 300Z"/></clipPath>
+          <clipPath id="ck"><path d="M300 300H592A292 292 0 0 1 300 592Z"/></clipPath>
+        </defs>
+        <a href="#fish" aria-label="Рыба">
+          <g class="sector s1">
+            <g clip-path="url(#cf)"><image href="img/znat.jpg" x="-60" y="8" width="360" height="584" preserveAspectRatio="xMidYMid slice"/>
+              <rect x="0" y="0" width="300" height="600" fill="#127036" opacity=".18"/></g>
+            <rect x="52" y="496" width="170" height="52" rx="26" fill="#127036"/>
+            <text x="137" y="532" text-anchor="middle" fill="#fff">Рыба</text>
+          </g>
+        </a>
+        <a href="#b2b" aria-label="Солод">
+          <g class="sector s2">
+            <g clip-path="url(#cs)"><image href="img/solod.jpg" x="300" y="8" width="292" height="292" preserveAspectRatio="xMidYMid slice"/>
+              <rect x="300" y="8" width="292" height="292" fill="#03709E" opacity=".28"/></g>
+            <rect x="398" y="130" width="150" height="52" rx="26" fill="#03709E"/>
+            <text x="473" y="166" text-anchor="middle" fill="#fff">Солод</text>
+          </g>
+        </a>
+        <a href="#b2b" aria-label="Крафт-мешки">
+          <g class="sector s3">
+            <g clip-path="url(#ck)"><image href="img/kraft.jpg" x="300" y="300" width="292" height="292" preserveAspectRatio="xMidYMid slice"/>
+              <rect x="300" y="300" width="292" height="292" fill="#CD9A1B" opacity=".18"/></g>
+            <rect x="340" y="440" width="190" height="52" rx="26" fill="#CD9A1B"/>
+            <text x="435" y="476" text-anchor="middle" fill="#08291A">Крафт-мешки</text>
+          </g>
+        </a>
+        <g fill="none" stroke="#08291A" stroke-width="7"><path d="M300 8V592M300 300H592"/></g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section id="fish" aria-labelledby="fish-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="fish-h">Рыба, которую мы выращиваем, солим, вялим и коптим</h2>
+      <p>Шесть линеек. Посмотрите и приходите в магазин или позвоните нам.</p>
+    </div>
+    <div class="grid">
+      <article class="cat c1"><img src="img/som.jpg" alt="Мраморный сом на разделочной доске"><div>
+        <h3>Мраморный сом</h3>
+        <p>Мраморный (африканский) клариевый сом с нашей аквафермы «Знатный Сом» в Саранске. Диетический продукт.</p></div></article>
+      <article class="cat c2"><img src="img/solenaya.jpg" alt="Солёная рыба: иваси, скумбрия, филе красной рыбы"><div>
+        <h3>Солёная рыба</h3>
+        <p>От иваси до кижуча. Собственный засол: пряный посол в бочках и «малая» соль.</p></div></article>
+      <article class="cat c3"><img src="img/vyalenaya.jpg" alt="Вяленая рыба на мешковине"><div>
+        <h3>Вяленая рыба</h3>
+        <p>Свои цеха вяления. Речная и морская рыба, от доступной до премиальной.</p></div></article>
+      <article class="cat c4"><img src="img/marinad.jpg" alt="Филе мраморного сома в маринаде, вакуумная упаковка"><div>
+        <span class="tag">Готовь без хлопот</span>
+        <h3>Рыба в маринаде</h3>
+        <p>Полуфабрикаты в авторских маринадах. Выложите рыбу на сковороду, гриль или в мультиварку.</p></div></article>
+      <article class="cat c5"><img src="img/gk.jpg" alt="Рыба горячего копчения на разделочной доске"><div>
+        <h3>Горячего копчения</h3>
+        <p>Копчение в печи на натуральных опилках: золотистый цвет, аромат и нежная текстура.</p></div></article>
+      <article class="cat c6"><img src="img/xk.jpg" alt="Рыба холодного копчения"><div>
+        <h3>Холодного копчения</h3>
+        <p>Низкая температура сохраняет полезные вещества. Рыба получает аромат натурального дыма.</p></div></article>
+    </div>
+
+    <div class="goods">
+      <h3>Популярное в каталоге</h3>
+      <p>Цены с сайта grimak.ru. Актуальные цены уточняйте в магазине.</p>
+      <ul>
+        <li class="good"><img src="img/p_leshch.jpg" alt="Лещ вяленый"><div><h4>Лещ вяленый Северный</h4><span class="price">290 <small>₽</small></span></div></li>
+        <li class="good"><img src="img/p_fresh.jpg" alt="Свежий мраморный сом"><div><h4>Свежий сом мраморный</h4><span class="price">510 <small>₽ за кг</small></span></div></li>
+        <li class="good"><img src="img/p_steak.jpg" alt="Стейки свежего сома"><div><h4>Стейки свежего сома мраморного</h4><span class="price">1 170 <small>₽</small></span></div></li>
+        <li class="good"><img src="img/p_file.jpg" alt="Филе свежего сома без кожи"><div><h4>Филе свежего сома мраморного без кожи</h4><span class="price">1 550 <small>₽</small></span></div></li>
+        <li class="good"><img src="img/p_marsom.jpg" alt="Филе мраморного сома в маринаде"><div><h4>Филе мраморного сома в маринаде «Апельсин-Лимон»</h4><span class="price">1 490 <small>₽</small></span></div></li>
+        <li class="good"><img src="img/p_dorado.jpg" alt="Дорадо в маринаде с паприкой"><div><h4>Дорадо в маринаде с паприкой</h4><span class="price">1 570 <small>₽</small></span></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="aqua" class="dark aqua" aria-labelledby="aqua-h">
+  <div class="wrap">
+    <div class="pic">
+      <img src="img/farm.jpg" alt="Мраморный сом с аквафермы в Саранске">
+      <div class="big">100 т<span>в год: общая мощность аквафермы</span></div>
+    </div>
+    <div>
+      <h2 id="aqua-h">Знатный Сом: своя акваферма в Саранске</h2>
+      <p class="txt">Мы выращиваем мраморного клариевого сома сами, поэтому поставляем свежую рыбу без перебоев. Рыба растёт под постоянным контролем, проходит проверки и имеет необходимую сертификацию.</p>
+      <ul class="ben">
+        <li><b>Витамины и аминокислоты</b>Богатый набор витаминов, микроэлементов и аминокислот.</li>
+        <li><b>Гипоаллергенно</b>Подходит для диетического и детского питания.</li>
+        <li><b>Омега-3 и Омега-6</b>Повышенное содержание жирных кислот.</li>
+        <li><b>Нежное мясо</b>Нет чешуи и мелких костей.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="b2b" class="b2b" aria-labelledby="b2b-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="b2b-h">Для хлебозаводов и производителей: солод и крафт-мешки</h2>
+      <p>Два направления для бизнеса. Поставляем по России и в страны ближнего зарубежья.</p>
+    </div>
+    <div class="cols">
+      <article class="panel solod">
+        <h3>Ржаной ферментированный солод</h3>
+        <img src="img/solod.jpg" alt="Мешочек с ржаным солодом">
+        <p>Натуральный продукт по ГОСТ. Улучшает качество муки, лучше впитывает воду, делает тесто эластичным и увеличивает срок хранения хлеба. Подходит для ржаных, ржано-пшеничных и солодовых сортов, кваса, кондитерских изделий.</p>
+        <ol class="steps">
+          <li>Очистка и промывка зерна</li>
+          <li>Замачивание ржи</li>
+          <li>Проращивание в специальных камерах</li>
+          <li>Томление в печах 5–6 суток</li>
+          <li>Сушка и помол</li>
+        </ol>
+        <a class="btn" href="tel:+78342325922">Заказать образец по телефону</a>
+      </article>
+      <article class="panel kraft">
+        <h3>Многослойные <span style="white-space:nowrap">крафт-мешки</span></h3>
+        <img src="img/kraft.jpg" alt="Бумажные крафт-мешки с печатью">
+        <p>Производим с 2011 года. Бумага Марийского и Котласского целлюлозно-бумажных комбинатов. Бумага натуральна и легко перерабатывается.</p>
+        <ul class="facts">
+          <li>Печать одним цветом или многоцветная: ваш знак, логотип и информация о продукте</li>
+          <li>Под заказ: 2 слоя котласа</li>
+          <li>Поможем с макетом для флексоформы</li>
+          <li>Есть доставка, скидки зависят от объёма</li>
+        </ul>
+        <ul class="uses" aria-label="Что упаковывают">
+          <li>корма для животных</li><li>сухое молоко</li><li>яичный порошок</li><li>крахмал</li><li>макароны</li><li>семена</li><li>древесный уголь</li>
+        </ul>
+        <a class="btn btn-dark" href="tel:+78342325922">Обсудить заказ</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about" aria-labelledby="about-h" style="background:#fff">
+  <div class="wrap">
+    <div>
+      <h2 id="about-h">Больше 25 лет в пищевой переработке</h2>
+      <p class="lead">«Гри-Мак» работает в трёх направлениях: акваферма, производство солода и производство крафт-мешков. Мы выбираем лучших поставщиков и держим собственное производство.</p>
+      <ul class="milestones">
+        <li><b>2011</b><span>Начали производить многослойные бумажные мешки.</span></li>
+        <li><b>2020</b><span>3 место в номинации «Экспортер года в сфере агропромышленного комплекса» на конкурсе «Экспортер года Республики Мордовия».</span></li>
+        <li><b>2020</b><span>В декабре компании исполнилось 27 лет. Участие в продовольственной выставке Peterfood в Санкт-Петербурге.</span></li>
+      </ul>
+    </div>
+    <div class="quotes">
+      <figure class="q"><p>Претензий по качеству солода за период работы не было. Вся сопроводительная документация предоставляется без задержек. Планируем и в дальнейшем работать с ООО «Гри-Мак» и увеличивать объёмы закупок.</p><cite>Сырьевая компания «Альянс»</cite></figure>
+      <figure class="q"><p>Наша компания является клиентом ООО «Гри-Мак» уже более 5 лет. За это время ООО «Гри-Мак» показало себя как надёжный поставщик бумажных мешков, который всегда ответственно и в срок осуществляет поставки.</p><cite>ООО «Олежка»</cite></figure>
+    </div>
+  </div>
+</section>
+
+<section id="shops" class="shops" aria-labelledby="shops-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="shops-h">Два фирменных магазина в Саранске</h2>
+      <p>Приходите, смотрите рыбу и пробуйте лично. Или закажите на сайте.</p>
+    </div>
+    <div class="grid">
+      <article class="shop"><img src="img/store1.jpg" alt="Фирменный магазин на улице Студенческой"><div>
+        <h3>Студенческая, 6А</h3>
+        <address>Саранск, ул. Студенческая, 6А</address>
+        <a class="map" href="https://yandex.ru/maps/?text=%D0%A1%D0%B0%D1%80%D0%B0%D0%BD%D1%81%D0%BA%2C%20%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%2C%206%D0%90">Открыть на карте</a></div></article>
+      <article class="shop"><img src="img/store2.jpg" alt="Фирменный магазин на улице Ярославской, вывеска «Здесь рыба»"><div>
+        <h3>Ярославская, 16А</h3>
+        <address>Саранск, ул. Ярославская, 16А</address>
+        <a class="map" href="https://yandex.ru/maps/?text=%D0%A1%D0%B0%D1%80%D0%B0%D0%BD%D1%81%D0%BA%2C%20%D0%AF%D1%80%D0%BE%D1%81%D0%BB%D0%B0%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2C%2016%D0%90">Открыть на карте</a></div></article>
+    </div>
+    <div class="deliv">
+      <strong>Заказ от 2000 ₽: доставка по Саранску бесплатно</strong>
+      <span>Закажите по телефону 8 (8342) 32-59-22</span>
+    </div>
+  </div>
+</section>
+
+<section id="contacts" class="contacts" aria-labelledby="c-h">
+  <div class="wrap">
+    <div>
+      <h2 id="c-h">Позвоните нам</h2>
+      <a class="tel" href="tel:+78342325922">8 (8342) 32-59-22</a>
+      <a class="btn btn-ghost" href="mailto:koravit@yandex.ru">Написать на почту</a>
+    </div>
+    <dl>
+      <div><dt>Адрес</dt><dd>430007, Республика Мордовия, г. Саранск, ул. Студенческая, 6А</dd></div>
+      <div><dt>Телефон и факс</dt><dd><a href="tel:+78342325922">8 (8342) 32-59-22</a></dd></div>
+      <div><dt>Электронная почта</dt><dd><a href="mailto:koravit@yandex.ru">koravit@yandex.ru</a></dd></div>
+      <div><dt>ВКонтакте</dt><dd><a href="https://vk.com/znatnyisom">vk.com/znatnyisom</a></dd></div>
+    </dl>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Демо-версия. Материалы принадлежат ООО «Гри-Мак».</span>
+    <span>ООО «Гри-Мак», Саранск</span>
+  </div>
+</footer>
+
+</body>
+</html>

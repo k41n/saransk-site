@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>NANO4 — антикоррозионное покрытие, ООО «ТК «ЖНФ», Саранск</title>
+<meta name="description" content="Антикоррозионное покрытие NANO4: грунт-эмаль 3 в 1 для металлоконструкций, вагонов и трубопроводов. Материал включён в реестр РЖД. ООО «ТК «ЖНФ», г. Саранск.">
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0C1D37;
+  --navy-2:#142C52;
+  --blue:#1F5FD0;
+  --blue-soft:#E6EEFB;
+  --blue-light:#8FB2F0;
+  --red:#8B0F14;
+  --red-soft:#F6E7E8;
+  --green:#6CC04A;
+  --green-deep:#2F6B1B;
+  --green-soft:#EAF6E3;
+  --paper:#F3F6FA;
+  --white:#FFFFFF;
+  --ink:#0C1D37;
+  --text:#38475C;
+  --line:#D3DBE7;
+  --radius:6px;
+  --head:'Geologica',system-ui,sans-serif;
+  --body:'Golos Text',system-ui,sans-serif;
+  --gutter:clamp(20px,4vw,56px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);font-size:17px;line-height:1.6;color:var(--text);background:var(--paper);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 var(--gutter)}
+h1,h2,h3{font-family:var(--head);color:var(--ink);font-weight:500;line-height:1.12;letter-spacing:-.01em}
+h2{font-size:clamp(28px,4vw,46px);font-weight:400;max-width:20ch}
+h3{font-size:clamp(20px,2vw,24px)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 28px;border-radius:var(--radius);font-family:var(--head);font-weight:500;font-size:17px;text-decoration:none;border:2px solid transparent;transition:background .2s,color .2s,border-color .2s}
+.btn-blue{background:var(--blue);color:#fff}
+.btn-blue:hover{background:#1a50b0}
+.btn-line{border-color:rgba(255,255,255,.45);color:#fff}
+.btn-line:hover{background:rgba(255,255,255,.1)}
+.btn-dark{background:var(--navy);color:#fff}
+.btn-dark:hover{background:var(--navy-2)}
+
+/* header */
+.top{position:absolute;inset:0 0 auto 0;z-index:5;padding:22px 0}
+.top .wrap{display:flex;align-items:center;gap:32px}
+.logo{display:block;width:150px;color:#fff}
+.nav{display:flex;gap:30px;margin-left:auto;font-size:16px}
+.nav a{color:#fff;text-decoration:none;opacity:.88;padding:6px 0;border-bottom:2px solid transparent}
+.nav a:hover{opacity:1;border-color:var(--blue-light)}
+.top-tel{display:inline-flex;align-items:center;min-height:46px;padding:0 20px;border-radius:var(--radius);background:#fff;color:var(--navy);font-family:var(--head);font-weight:500;text-decoration:none;white-space:nowrap}
+
+/* hero */
+.hero{position:relative;background:var(--navy);color:#fff;overflow:hidden;padding:150px 0 0}
+.hero::before{content:"";position:absolute;inset:0;background:url(img/bg-towers.jpg) center/cover;mix-blend-mode:luminosity;opacity:.28;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 55%);mask-image:linear-gradient(90deg,transparent 0,#000 55%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:40px;align-items:end}
+.hero-copy{padding-bottom:70px}
+.hero h1{color:#fff;font-size:clamp(36px,5.6vw,76px);font-weight:400;line-height:1.04;letter-spacing:-.02em;max-width:12ch}
+.hero-lead{margin-top:26px;font-size:clamp(18px,1.6vw,21px);max-width:34em;color:#CBD8EE}
+.hero-lead b{color:#fff;font-weight:600}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.reg{display:inline-flex;align-items:center;gap:10px;margin-top:30px;padding:9px 16px 9px 12px;border:1px solid rgba(255,255,255,.28);border-radius:999px;font-size:15px;color:#E4ECF9}
+.reg i{width:10px;height:10px;border-radius:50%;background:var(--green)}
+.hero-can{position:relative;justify-self:center;width:min(100%,430px);margin-bottom:-36px;z-index:2}
+.hero-can img{width:100%;height:auto;filter:drop-shadow(0 30px 40px rgba(0,0,0,.45))}
+
+/* temperature scale */
+.scale{position:relative;z-index:1;background:var(--navy-2);border-top:1px solid rgba(255,255,255,.12);padding:26px 0 30px}
+.scale .wrap{display:block}
+.scale-head{display:flex;flex-wrap:wrap;gap:6px 24px;justify-content:space-between;align-items:baseline;margin-bottom:18px;max-width:calc(100% - 0px)}
+.scale-head strong{font-family:var(--head);font-weight:400;font-size:clamp(18px,2vw,24px);color:#fff}
+.scale-head span{font-size:15px;color:#B5C5E0;max-width:48ch}
+.bar{position:relative;height:14px;border-radius:2px;background:linear-gradient(90deg,#3E7BEB 0%,#8FB2F0 40%,#B7BFCC 50%,#C98388 62%,#8B0F14 100%);animation:sweep 1.6s cubic-bezier(.2,.7,.2,1) .2s both}
+.ticks{display:flex;justify-content:space-between;margin:8px -1.6em 0;list-style:none}
+.ticks li{position:relative;width:3.2em;text-align:center;font-family:var(--head);font-size:14px;color:#B5C5E0;padding-top:12px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.ticks li::before{content:"";position:absolute;top:0;left:50%;width:1px;height:8px;background:#6F85A8}
+.ticks li.zero{color:#fff}
+.ticks li.zero::before{height:14px;background:#fff}
+@keyframes sweep{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+
+/* sections */
+section{padding:clamp(64px,9vw,120px) 0}
+.sec-head{display:flex;flex-wrap:wrap;gap:16px 60px;justify-content:space-between;align-items:end;margin-bottom:clamp(32px,5vw,56px)}
+.sec-head p{max-width:42ch;font-size:18px}
+
+/* products */
+.product{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);border:1px solid var(--line);background:#fff;border-radius:10px;overflow:hidden}
+.product + .product{margin-top:28px}
+.product-pic{position:relative;display:grid;place-items:center;padding:40px 24px;background:var(--blue-soft)}
+.product-pic img{width:min(100%,320px);height:auto;filter:drop-shadow(0 22px 24px rgba(12,29,55,.28))}
+.product-body{padding:clamp(24px,3.4vw,48px)}
+.product-tag{display:inline-block;margin-bottom:14px;padding:4px 12px;border-radius:14px;background:var(--blue);color:#fff;font-size:14px;font-weight:500}
+.product-body p.lead{margin-top:14px;max-width:56ch}
+.facts{list-style:none;margin-top:22px;display:grid;gap:10px}
+.facts li{position:relative;padding-left:28px}
+.facts li::before{content:"";position:absolute;left:0;top:.5em;width:14px;height:8px;border-left:3px solid var(--blue);border-bottom:3px solid var(--blue);transform:rotate(-45deg) translateY(-3px)}
+.colors{margin-top:30px;border-top:1px solid var(--line)}
+.color{display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:6px 18px;align-items:center;padding:16px 0;border-bottom:1px solid var(--line)}
+.sw{width:44px;height:44px;border-radius:50%;border:1px solid rgba(12,29,55,.2)}
+.color b{display:block;font-family:var(--head);font-weight:500;color:var(--ink);font-size:18px}
+.color small{display:block;font-size:14px;color:var(--text)}
+.price{font-family:var(--head);font-weight:500;color:var(--ink);white-space:nowrap;font-size:18px}
+.price small{display:inline;font-weight:400;font-size:14px;color:var(--text)}
+.product.green .product-pic{background:var(--green-soft)}
+.product.green .product-tag{background:var(--green-deep)}
+.product.green .facts li::before{border-color:var(--green-deep)}
+.product.green{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
+.product.green .product-pic{order:2}
+.spec{margin-top:26px;border-top:1px solid var(--line)}
+.spec div{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-bottom:1px solid var(--line)}
+.spec dt{color:var(--text)}
+.spec dd{font-family:var(--head);font-weight:500;color:var(--ink);text-align:right}
+.product-cta{margin-top:30px}
+
+/* properties */
+.props{background:#fff;border-block:1px solid var(--line)}
+.prop-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.prop{padding:32px 30px 36px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.prop svg{width:48px;height:48px;color:var(--blue);margin-bottom:22px}
+.prop h3{font-size:21px;margin-bottom:10px}
+.prop p{font-size:16px}
+.prop.eco svg{color:var(--green-deep)}
+
+/* rzd */
+.rzd .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,90px);align-items:start}
+.rzd .big{font-family:var(--head);font-weight:300;font-size:clamp(24px,3vw,36px);line-height:1.25;color:var(--ink)}
+.rzd .big b{font-weight:500}
+.stamp{display:inline-flex;gap:14px;align-items:center;margin-top:30px;padding:16px 20px;border:2px solid var(--red);color:var(--red);border-radius:var(--radius);font-family:var(--head);font-weight:500;line-height:1.3}
+.stamp svg{width:34px;height:34px;flex:none}
+.rows{list-style:none;border-top:1px solid var(--line)}
+.rows li{padding:20px 0;border-bottom:1px solid var(--line);font-size:18px;color:var(--ink)}
+
+/* application */
+.apps{background:var(--blue);color:#fff}
+.apps h2{color:#fff}
+.apps .sec-head p{color:#E6EEFB}
+.app-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:0;border-top:1px solid rgba(255,255,255,.35)}
+.app{padding:30px 18px 6px 0}
+.app svg{width:56px;height:56px;margin-bottom:18px}
+.app span{display:block;font-family:var(--head);font-weight:400;font-size:18px;line-height:1.3}
+.apps-note{margin-top:44px;padding-top:28px;border-top:1px solid rgba(255,255,255,.35);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px 60px;color:#EAF1FD}
+.apps-note p{font-size:17px}
+.apps-note b{color:#fff;font-weight:600}
+
+/* order */
+.order-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px}
+.order-box{background:#fff;border:1px solid var(--line);border-radius:10px;padding:clamp(24px,3.4vw,44px)}
+.order-box.dark{background:var(--navy);border-color:var(--navy);color:#CBD8EE}
+.order-box.dark h3{color:#fff}
+.order-box h3{margin-bottom:18px}
+.order-box dl div{padding:13px 0;border-top:1px solid var(--line)}
+.order-box.dark dl div{border-color:rgba(255,255,255,.18)}
+.order-box dt{font-family:var(--head);font-weight:500;color:var(--ink);font-size:16px}
+.order-box.dark dt{color:#fff}
+.order-box dd{margin-top:2px}
+.prices{list-style:none;border-top:1px solid var(--line)}
+.prices li{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.prices li span{color:var(--ink)}
+.prices b{font-family:var(--head);font-weight:500;color:var(--ink);white-space:nowrap}
+.order-box .btn{margin-top:26px}
+.order-box.dark .btn{background:#fff;color:var(--navy)}
+
+/* about */
+.about{background:#fff;border-top:1px solid var(--line)}
+.about-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(32px,6vw,90px)}
+.about p+p{margin-top:16px}
+.about .org{margin-top:26px;padding:20px 22px;border-left:4px solid var(--blue);background:var(--paper);font-size:16px}
+.about .org b{font-family:var(--head);font-weight:500;color:var(--ink)}
+.news{list-style:none;border-top:1px solid var(--line);margin-top:8px}
+.news a{display:block;padding:20px 0;border-bottom:1px solid var(--line);text-decoration:none;font-family:var(--head);font-weight:400;color:var(--ink);font-size:19px;line-height:1.3}
+.news a:hover{color:var(--blue)}
+.news-more{display:inline-block;margin-top:18px;color:var(--blue);font-weight:600}
+.facts-co{list-style:none;margin-top:28px;display:grid;gap:14px}
+.facts-co li{padding-left:22px;position:relative}
+.facts-co li::before{content:"";position:absolute;left:0;top:.6em;width:8px;height:8px;background:var(--red)}
+
+/* contacts */
+.contacts{background:var(--navy);color:#CBD8EE}
+.contacts h2{color:#fff}
+.contact-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,90px);align-items:start}
+.phone{display:block;white-space:nowrap;font-family:var(--head);font-weight:300;font-size:clamp(26px,4.4vw,52px);color:#fff;text-decoration:none;letter-spacing:-.01em;line-height:1.1;margin-bottom:10px}
+.phone:hover{color:var(--blue-light)}
+.clist{list-style:none;border-top:1px solid rgba(255,255,255,.2)}
+.clist li{padding:18px 0;border-bottom:1px solid rgba(255,255,255,.2)}
+.clist small{display:block;font-size:14px;color:#8FA3C4;margin-bottom:2px}
+.clist a{color:#fff;text-decoration:none;font-size:19px}
+.clist a:hover{color:var(--blue-light)}
+.clist span{color:#fff;font-size:19px}
+.contacts .btn{margin-top:30px}
+
+footer{background:#081426;color:#8FA3C4;font-size:14px;padding:22px 0}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 30px;justify-content:space-between}
+
+@media (prefers-reduced-motion:reduce){.bar{animation:none}html{scroll-behavior:auto}}
+
+@media (max-width:1000px){
+  .nav{display:none}
+  .top-tel{margin-left:auto}
+  .hero .wrap{grid-template-columns:1fr}
+  .hero-copy{padding-bottom:30px}
+  .hero-can{width:min(70%,320px);margin-bottom:-24px;margin-top:6px}
+  .product,.product.green{grid-template-columns:1fr}
+  .product.green .product-pic{order:0}
+  .prop-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .rzd .grid,.about-grid,.contact-grid,.order-grid,.apps-note{grid-template-columns:1fr}
+  .app-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .top{padding:14px 0}
+  .logo{width:112px}
+  .top-tel{min-height:42px;padding:0 14px;font-size:14px}
+  .hero{padding-top:100px}
+  .hero-cta .btn{width:100%}
+  .ticks li:nth-child(even){color:transparent}
+  .ticks li:nth-child(even)::before{height:5px}
+  .ticks{margin-left:-1.2em;margin-right:-1.2em}
+  .ticks li{font-size:13px;width:2.4em}
+  .prop-grid{grid-template-columns:1fr}
+  .prop{padding:26px 22px}
+  .app-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .color{grid-template-columns:40px minmax(0,1fr)}
+  .sw{width:40px;height:40px}
+  .color .price{grid-column:2}
+  .spec div{flex-direction:column;gap:2px}
+  .spec dd{text-align:left}
+  .contacts .btn,.order-box .btn,.product-cta .btn{width:100%}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-drop" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5c7 9 12 15 12 22a12 12 0 0 1-24 0C12 20 17 14 24 5z"/><path d="M22.5 22.5l2.2-2v11"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="31" width="38" height="9" rx="1"/><path d="M10 31v9M16 31v9M22 31v9M28 31v9M34 31v9M40 31v9"/><path d="M5 26h38"/><path d="M14 22V9m0 0l-4 4m4-4l4 4M24 22V9m0 0l-4 4m4-4l4 4M34 22V9m0 0l-4 4m4-4l4 4"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"/><path d="M24 12v12l8 5"/><path d="M24 6v3M24 39v3M6 24h3M39 24h3"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4l16 6v12c0 10-7 18-16 22C15 40 8 32 8 22V10z"/><path d="M16 24l6 6 11-12"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M40 8C18 6 8 16 8 29c0 5 3 9 8 9 14 0 24-10 24-30z"/><path d="M8 42c4-12 12-20 22-25"/></symbol>
+    <symbol id="i-nut" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4l17 10v20L24 44 7 34V14z"/><circle cx="24" cy="24" r="7"/><path d="M5 43L43 5"/></symbol>
+
+    <symbol id="a-house" viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 27L28 8l23 19"/><path d="M11 24v26h34V24"/><path d="M19 32h7v7h-7zM30 32h7v7h-7z"/><path d="M24 50V44h8v6"/></symbol>
+    <symbol id="a-tank" viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 50V22c0-4 4-6 8-6s8 2 8 6v28"/><path d="M22 50V30c0-4 4-6 9-6s9 2 9 6v20"/><path d="M6 50h44M6 26h16M22 36h18"/><path d="M44 50V12M44 12h6M44 20h6M44 28h6M44 36h6M44 44h6"/></symbol>
+    <symbol id="a-train" viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="6" width="32" height="38" rx="6"/><path d="M12 24h32"/><path d="M12 14h32"/><circle cx="21" cy="35" r="2"/><circle cx="35" cy="35" r="2"/><path d="M18 44l-6 8M38 44l6 8M20 52h16"/></symbol>
+    <symbol id="a-bench" viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 14h40v8H8zM8 28h40v7H8z"/><path d="M12 22v0M14 35v15M42 35v15M10 50h8M38 50h8M12 14v-6M44 14v-6"/></symbol>
+    <symbol id="a-tower" viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="28" cy="12" r="2.5"/><path d="M19 6a13 13 0 0 0 0 12M37 6a13 13 0 0 1 0 12M13 2a20 20 0 0 0 0 20M43 2a20 20 0 0 1 0 20"/><path d="M28 15L16 52M28 15l12 37M12 52h32M21 36h14M24 26h8M18 46l20-10M38 46L18 36"/></symbol>
+    <symbol id="a-bridge" viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 38h50M3 44h50"/><path d="M14 8v36M42 8v36"/><path d="M14 10C10 26 6 34 3 38M14 10c4 16 10 24 14 28M42 10c-4 16-10 24-14 28M42 10c4 16 8 24 11 28"/><path d="M10 44v8M20 44v8M36 44v8M46 44v8"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="NANO4">
+      <svg viewBox="0 0 150 44" fill="none" stroke="currentColor" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="nano4">
+        <path d="M4 33V19M4 24c0-6 4-9 10-9s9 3 9 9v9"/>
+        <circle cx="42" cy="24" r="9.5"/><path d="M51.5 14v19"/>
+        <path d="M60 33V19M60 24c0-6 4-9 10-9s9 3 9 9v9"/>
+        <circle cx="97" cy="24" r="10"/>
+        <path d="M97 19.5c2.6 3 4 4.8 4 6.7a4 4 0 0 1-8 0c0-1.900 1.400-3.700 4-6.700z" fill="#8FB2F0" stroke="none"/>
+        <path d="M134 36V6L118 27h28" stroke="#8FB2F0" stroke-width="5.6"/>
+      </svg>
+    </a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#produkty">Продукты</a>
+      <a href="#svoystva">Свойства</a>
+      <a href="#primenenie">Применение</a>
+      <a href="#zakaz">Купить</a>
+      <a href="#kontakty">Контакты</a>
+    </nav>
+    <a class="top-tel" href="tel:+79376734950">+7 (937) 673-49-50</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" style="padding-bottom:0">
+  <div class="wrap">
+    <div class="hero-copy">
+      <h1>Антикоррозионные покрытия NANO4</h1>
+      <p class="hero-lead"><b>Система для длительной защиты поверхности от коррозии.</b> Грунт-эмаль 3 в 1 для новой и ремонтной окраски металлоконструкций, грузовых вагонов, подвагонного оборудования и сельскохозяйственной техники.</p>
+      <div class="hero-cta">
+        <a class="btn btn-blue" href="tel:+79376734950">Заказать по телефону</a>
+        <a class="btn btn-line" href="#produkty">Смотреть продукты</a>
+      </div>
+      <p class="reg"><i></i>Материал включён в реестр РЖД. Код СКМТР</p>
+    </div>
+    <div class="hero-can"><img src="img/can-antikor.webp" width="760" height="1063" alt="Банка антикоррозионного покрытия NANO4, 5 кг"></div>
+  </div>
+  <div class="scale">
+    <div class="wrap">
+      <div class="scale-head">
+        <strong>Рабочий диапазон: от −60&nbsp;°C до +60&nbsp;°C</strong>
+        <span>Условия эксплуатации по описанию производителя: промышленная атмосфера умеренного и холодного климата.</span>
+      </div>
+      <div class="bar" role="img" aria-label="Шкала температур от минус 60 до плюс 60 градусов Цельсия"></div>
+      <ol class="ticks" aria-hidden="true">
+        <li>−60</li><li>−50</li><li>−40</li><li>−30</li><li>−20</li><li>−10</li><li class="zero">0</li><li>10</li><li>20</li><li>30</li><li>40</li><li>50</li><li>+60</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section id="produkty">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Продукты линейки NANO4</h2>
+      <p>Антикоррозионное покрытие для металла и водно-дисперсионная краска. Банка 5 кг.</p>
+    </div>
+
+    <article class="product">
+      <div class="product-pic"><img src="img/can-antikor.webp" width="760" height="1063" alt="Антикоррозионное покрытие NANO-4, грунт-эмаль 3 в 1, 5 кг"></div>
+      <div class="product-body">
+        <span class="product-tag">Грунт-эмаль 3 в 1</span>
+        <h3>Антикоррозионное покрытие «Nano-4»</h3>
+        <p class="lead">Обеспечивает долговечность покрытия и высокую защиту от внешних механических воздействий. Подходит для новой и ремонтной окраски.</p>
+        <ul class="facts">
+          <li>Полное соответствие технологическим картам и регламентам РЖД</li>
+          <li>Можно наносить на слабо подготовленную поверхность</li>
+          <li>Высокая укрывистость, низкий расход, быстрое высыхание</li>
+          <li>Нанесение при отрицательных температурах</li>
+        </ul>
+        <div class="colors">
+          <div class="color"><span class="sw" style="background:#9EA2A5"></span><div><b>Серый, RAL 7040 «Серое окно»</b><small>Реестр РЖД, СКМТР 2313930045</small></div><span class="price"><small>от</small> 6 500 ₽</span></div>
+          <div class="color"><span class="sw" style="background:#C7C7C7"></span><div><b>Светло-серый, RAL 7035</b><small>Реестр РЖД, СКМТР 2313930044</small></div><span class="price"><small>от</small> 6 500 ₽</span></div>
+          <div class="color"><span class="sw" style="background:#BE3737"></span><div><b>Красный трафик, RAL 3020</b><small>РЖД, СКМТР 2313930046</small></div><span class="price"><small>от</small> 6 500 ₽</span></div>
+        </div>
+        <div class="product-cta"><a class="btn btn-blue" href="tel:+79376734950">Заказать</a></div>
+      </div>
+    </article>
+
+    <article class="product green">
+      <div class="product-body">
+        <span class="product-tag">Водно-дисперсионная акриловая краска</span>
+        <h3>Фасадная краска ВД-АК-101 «Nano-4»</h3>
+        <p class="lead">Выдерживает высокую эксплуатационную нагрузку, стойкая к воздействию плесневых грибов. Образует однородное матовое паропроницаемое «дышащее» покрытие.</p>
+        <ul class="facts">
+          <li>Помещения с высокой нагрузкой: вестибюли, больницы, учреждения, промышленные и сельскохозяйственные здания</li>
+          <li>Помещения с повышенной влажностью: ванные комнаты, кухни</li>
+          <li>Основания: кирпич, бетон, штукатурка, ДСП, ДВП, гипсокартон</li>
+        </ul>
+        <dl class="spec">
+          <div><dt>Сухой остаток</dt><dd>не менее 50 %</dd></div>
+          <div><dt>Блеск</dt><dd>матовая</dd></div>
+          <div><dt>Плотность</dt><dd>1,38–1,4 кг/л</dd></div>
+          <div><dt>Белизна</dt><dd>не менее 96 %</dd></div>
+        </dl>
+        <div class="product-cta"><a class="btn btn-dark" href="tel:+79376734950">Узнать условия</a></div>
+      </div>
+      <div class="product-pic"><img src="img/can-fasad.webp" width="760" height="1063" alt="Фасадная краска ВД-АК-101 NANO-4, 5 кг"></div>
+    </article>
+  </div>
+</section>
+
+<section class="props" id="svoystva">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Ключевые преимущества</h2>
+      <p>Однокомпонентная система на основе экологически безопасной полиуретановой краски и фторированного графена.</p>
+    </div>
+    <div class="prop-grid">
+      <div class="prop"><svg><use href="#i-drop"/></svg><h3>Однокомпонентность</h3><p>Готовая к нанесению система на основе полиуретановой краски и фторированного графена.</p></div>
+      <div class="prop"><svg><use href="#i-layers"/></svg><h3>Высокая адгезия к поверхности</h3><p>1 по ГОСТ 31149-2014.</p></div>
+      <div class="prop"><svg><use href="#i-clock"/></svg><h3>Срок эксплуатации 25 лет</h3><p>Не теряет заявленных свойств на протяжении всего срока эксплуатации.</p></div>
+      <div class="prop"><svg><use href="#i-shield"/></svg><h3>Механическая прочность</h3><p>Покрытие стойко к внешним воздействиям: летящему камню, гравию, атмосферным явлениям.</p></div>
+      <div class="prop eco"><svg><use href="#i-leaf"/></svg><h3>Экологическая безопасность</h3><p>В составе нет ксилола, бензола и химических элементов 1–4 класса опасности.</p></div>
+      <div class="prop"><svg><use href="#i-nut"/></svg><h3>Коррозионная стойкость</h3><p>Длительная защита поверхности от коррозии.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="rzd">
+  <div class="wrap grid">
+    <div>
+      <h2>Для РЖД и промышленности</h2>
+      <p class="big" style="margin-top:28px">Официальные поставки антикоррозийного покрытия Nano-4 <b>для подразделений и подрядчиков ОАО «РЖД»</b>.</p>
+      <div class="stamp"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4l16 6v12c0 10-7 18-16 22C15 40 8 32 8 22V10z"/><path d="M16 24l6 6 11-12"/></svg><span>Материал включён в реестр РЖД<br>Есть код СКМТР</span></div>
+    </div>
+    <ul class="rows">
+      <li>Полное соответствие технологическим картам и регламентам РЖД</li>
+      <li>Грузовые вагоны и подвагонное оборудование</li>
+      <li>Новая и ремонтная окраска металлоконструкций</li>
+      <li>Сельскохозяйственная техника и другие изделия в условиях промышленной атмосферы</li>
+    </ul>
+  </div>
+</section>
+
+<section class="apps" id="primenenie">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Сферы применения</h2>
+      <p>Покрытие предназначено для металлических поверхностей: наружных и внутренних поверхностей промышленного оборудования.</p>
+    </div>
+    <div class="app-grid">
+      <div class="app"><svg><use href="#a-house"/></svg><span>Объекты ЖКХ</span></div>
+      <div class="app"><svg><use href="#a-tank"/></svg><span>Объекты нефтегазовой сферы</span></div>
+      <div class="app"><svg><use href="#a-bridge"/></svg><span>Мостовые сооружения</span></div>
+      <div class="app"><svg><use href="#a-train"/></svg><span>Транспортный сегмент</span></div>
+      <div class="app"><svg><use href="#a-bench"/></svg><span>Объекты благоустройства</span></div>
+      <div class="app"><svg><use href="#a-tower"/></svg><span>Вышки сотовой связи</span></div>
+    </div>
+    <div class="apps-note">
+      <p><b>Что красят:</b> различные резервуары, мостовые сооружения, нефтепроводы, газопроводы, цистерны, металлоконструкции, трубы, арматуру.</p>
+      <p><b>Где работает:</b> на промышленном оборудовании снаружи и внутри. Условия: промышленная атмосфера умеренного и холодного климата.</p>
+    </div>
+  </div>
+</section>
+
+<section id="zakaz">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Доставка и оплата</h2>
+      <p>Поставки по всей России через транспортные компании.</p>
+    </div>
+    <div class="order-grid">
+      <div class="order-box dark">
+        <h3>Оптовые закупки для юридических лиц</h3>
+        <p>Поставки промышленной краски крупным и средним оптом по договору.</p>
+        <dl style="margin-top:18px">
+          <div><dt>Оплата</dt><dd>Безналичный расчёт по договору поставки</dd></div>
+          <div><dt>Доставка</dt><dd>Заказы по всей России через надёжные транспортные компании</dd></div>
+          <div><dt>Как заказать</dt><dd>Оставьте заявку на опт или позвоните</dd></div>
+        </dl>
+        <a class="btn" href="tel:+79376734950">Позвонить</a>
+      </div>
+      <div class="order-box">
+        <h3>Малые объёмы и тест для физических лиц</h3>
+        <ul class="prices">
+          <li><span>Краска «Нано-4» серый (реестр РЖД, СКМТР)</span><b>от 6 500 ₽</b></li>
+          <li><span>Краска Nano-4 светло-серый (реестр РЖД)</span><b>от 6 500 ₽</b></li>
+          <li><span>Краска Nano-4 красный трафик (РЖД)</span><b>от 6 500 ₽</b></li>
+        </ul>
+        <a class="btn btn-blue" href="tel:+79376734950">Заказать по телефону</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="o-kompanii">
+  <div class="wrap about-grid">
+    <div>
+      <h2>О компании</h2>
+      <p style="margin-top:26px">ООО «Технологическая компания «ЖНФ» — российский разработчик и производитель защитных лакокрасочных материалов с гидрофобными и коррозионностойкими свойствами. Компания зарегистрирована в Саранске, в Технопарке Мордовии.</p>
+      <ul class="facts-co">
+        <li>В 2023 году компания стала победителем конкурса инновационного развития Куйбышевской железной дороги.</li>
+        <li>Антикоррозионное покрытие NANO4 включено в реестр РЖД.</li>
+      </ul>
+      <p class="org"><b>ООО «ТК «ЖНФ»</b><br>430034, Республика Мордовия, г. Саранск, ул. Лодыгина, д. 3, эт. 2, оф. 214</p>
+    </div>
+    <div>
+      <h3>Новости и статьи</h3>
+      <ul class="news">
+        <li><a href="https://nano4.ru/blog/01102026">Покрытие для металлокаркаса для защиты от влаги и ржавчины</a></li>
+        <li><a href="https://nano4.ru/blog/24092026">Антикоррозийные составы НАНО4 для инфраструктуры РЖД: защита мостов, тоннелей и опор контактной сети</a></li>
+        <li><a href="https://nano4.ru/blog/08092026">Подземные конструкции и трубопроводы под защитой Nano 4</a></li>
+      </ul>
+      <a class="news-more" href="https://nano4.ru/blog">Все новости на nano4.ru</a>
+    </div>
+  </div>
+</section>
+
+<section class="contacts" id="kontakty">
+  <div class="wrap contact-grid">
+    <div>
+      <h2>Контакты</h2>
+      <p style="margin-top:22px;max-width:34ch">Бесплатная консультация. Специалисты оперативно отвечают на все обращения.</p>
+      <a class="btn btn-blue" href="tel:+79376734950">Позвонить</a>
+    </div>
+    <div>
+      <a class="phone" href="tel:+79376734950">+7 (937) 673-49-50</a>
+      <ul class="clist">
+        <li><small>Электронная почта</small><a href="mailto:antipov@cnnrm.ru">antipov@cnnrm.ru</a></li>
+        <li><small>Адрес</small><span>430034, Республика Мордовия, г. Саранск, ул. Лодыгина, д. 3, эт. 2, оф. 214</span></li>
+        <li><small>Организация</small><span>ООО «ТК «ЖНФ»</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Демо-версия. Материалы принадлежат ООО «ТК «ЖНФ»</span>
+    <span>NANO4 — торговая марка антикоррозионных покрытий</span>
+  </div>
+</footer>
+
+</body>
+</html>

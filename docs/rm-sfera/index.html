@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>ООО «Сфера» — газовые баллоны, Саранск</title>
+<meta name="description" content="ООО «Сфера», р.п. Ялга, Саранск. Автомобильные газовые баллоны для сжиженного углеводородного газа: тороидальные БГТ, цилиндрические БГ, бытовой БГБ-50.">
+<link rel="icon" type="image/png" href="img/logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap&subset=cyrillic" rel="stylesheet">
+<style>
+:root{
+  --navy:#013064;
+  --teal:#054862;
+  --blue:#2AA9E0;
+  --cyan:#28B9DC;
+  --signal:#E94730;
+  --signal-d:#C7351F;
+  --graphite:#383A3B;
+  --paper:#EEF4F8;
+  --line:#CFDCE6;
+  --white:#fff;
+  --muted:#5E6C77;
+  --head:'Geologica','Arial',sans-serif;
+  --body:'IBM Plex Sans','Arial',sans-serif;
+  --gutter:clamp(16px,4vw,48px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;background:var(--white);color:var(--graphite);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-text-size-adjust:100%}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--head);margin:0;color:var(--navy);line-height:1.12;letter-spacing:-.01em}
+p{margin:0}
+.wrap{width:min(1240px,100%);margin-inline:auto;padding-inline:var(--gutter)}
+:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;border-radius:4px;font-family:var(--head);font-weight:600;font-size:17px;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.btn-signal{background:var(--signal);color:#fff}
+.btn-signal:hover{background:var(--signal-d)}
+.btn-line{border-color:var(--navy);color:var(--navy);background:transparent}
+.btn-line:hover{background:var(--navy);color:#fff}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:28px;min-height:72px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{height:46px;width:auto}
+.brand b{display:block;font-family:var(--head);font-weight:600;font-size:24px;letter-spacing:.04em;color:var(--graphite);line-height:1}
+.brand i{display:block;font-style:normal;font-size:12.5px;letter-spacing:.14em;color:var(--muted);margin-top:4px;text-transform:none}
+.nav{display:flex;gap:26px;margin-left:auto;font-weight:500;font-size:16px}
+.nav a{text-decoration:none;padding:6px 0;border-bottom:2px solid transparent}
+.nav a:hover{border-color:var(--blue)}
+.top-tel{font-family:var(--head);font-weight:600;color:var(--navy);text-decoration:none;white-space:nowrap}
+.top-tel:hover{color:var(--signal)}
+
+/* hero */
+.hero{background:var(--paper);position:relative;overflow:hidden}
+.hero>.wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:40px;align-items:center;padding-block:56px 40px}
+.hero h1{font-size:clamp(34px,4.4vw,58px);font-weight:600;max-width:16ch}
+.hero .lead{margin-top:22px;font-size:19px;max-width:34em}
+.hero .actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.hero-art{position:relative;aspect-ratio:1/1;width:min(100%,520px);justify-self:center}
+.hero-art svg{position:absolute;inset:0;width:100%;height:100%}
+.hero-art .tank{position:absolute;left:50%;top:50%;width:62%;transform:translate(-50%,-47%);filter:drop-shadow(0 22px 18px rgba(1,48,100,.28))}
+.ring-base{fill:none;stroke:var(--blue);stroke-width:46}
+.ring-dark{fill:none;stroke:var(--navy);stroke-width:46;animation:ring 1.6s cubic-bezier(.2,.7,.2,1) both}
+.ring-dark.b{animation-delay:.25s}
+@keyframes ring{from{stroke-dasharray:0 360}}
+.hero-cap{position:absolute;left:0;bottom:2%;font-size:15px;color:var(--muted);max-width:14em}
+.hero-cap b{display:block;font-family:var(--head);color:var(--navy);font-size:17px}
+
+.facts{background:var(--navy);color:#fff}
+.facts dl{margin:0;display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.facts dl>div{padding:22px 24px;border-left:1px solid rgba(255,255,255,.18)}
+.facts dl>div:first-child{border-left:0;padding-left:0}
+.facts dt{font-size:15px;color:#BBD6EA}
+.facts dd{margin:2px 0 0;font-family:var(--head);font-weight:600;font-size:clamp(22px,2.4vw,30px);white-space:nowrap}
+
+/* sections */
+section{padding-block:clamp(56px,8vw,104px)}
+.sec-head{max-width:760px;margin-bottom:40px}
+.sec-head h2{font-size:clamp(30px,4vw,48px);font-weight:600}
+.sec-head p{margin-top:14px;font-size:18px;color:var(--muted)}
+
+/* families */
+.fam{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
+.card{background:var(--paper);border-radius:6px;padding:26px;display:flex;flex-direction:column;gap:14px;min-height:100%}
+.card.c-a,.card.c-b,.card.c-c{grid-column:span 2}
+.card.c-d{grid-column:span 2}
+.card.c-e{grid-column:span 4;flex-direction:row;align-items:center;gap:28px;background:var(--teal);color:#fff}
+.card.c-e h3{color:#fff}
+.card .pic{height:190px;display:flex;align-items:center;justify-content:center}
+.card .pic img{max-height:100%;width:auto;max-width:100%;object-fit:contain}
+.card h3{font-size:23px;font-weight:600}
+.card .range{font-family:var(--head);font-weight:500;color:var(--signal-d);font-size:17px}
+.card.c-e .range{color:#FFB3A6}
+.card p{font-size:16px}
+.card.c-e .pic{flex:0 0 260px}
+.card.c-e .txt{display:flex;flex-direction:column;gap:12px}
+
+/* catalog */
+.catalog{background:var(--white)}
+.common{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0;border-top:3px solid var(--navy);margin-bottom:34px}
+.common div{padding:16px 18px 14px 0;border-bottom:1px solid var(--line)}
+.common dt{font-size:14.5px;color:var(--muted)}
+.common dd{margin:2px 0 0;font-weight:500;font-size:17px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.tabs button{font:500 16px var(--body);padding:10px 18px;border-radius:999px;border:1.5px solid var(--line);background:#fff;color:var(--navy);cursor:pointer}
+.tabs button[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.tabs button:hover{border-color:var(--navy)}
+.tbl{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.tbl th{background:var(--navy);color:#fff;text-align:left;font-weight:500;font-size:15px;padding:12px 16px;white-space:nowrap}
+.tbl th:not(:first-child),.tbl td:not(:first-child){text-align:right}
+.tbl td{padding:12px 16px;border-bottom:1px solid var(--line);vertical-align:middle}
+.tbl tbody tr:nth-child(even){background:var(--paper)}
+.tbl .m{font-family:var(--head);font-weight:600;color:var(--navy);font-size:19px;display:block;line-height:1.2}
+.tbl .t{font-size:14px;color:var(--muted);display:block}
+.tbl .v{font-family:var(--head);font-weight:600;font-size:19px;white-space:nowrap}
+.tbl td{white-space:nowrap}
+.tbl tr[hidden]{display:none}
+.cat-grid{display:grid;grid-template-columns:minmax(0,1fr) 270px;gap:36px;align-items:start}
+.cat-pic{position:sticky;top:96px;background:var(--paper);border-radius:6px;padding:22px;text-align:center}
+.cat-pic img{height:170px;width:100%;object-fit:contain;transition:opacity .2s}
+.cat-pic p{margin-top:14px;font-size:14.5px;color:var(--muted);text-align:left}
+.note{margin-top:14px;font-size:15px;color:var(--muted);max-width:760px}
+.bgb{margin-top:34px;display:grid;grid-template-columns:200px 1fr;gap:28px;align-items:center;background:var(--paper);border-radius:6px;padding:24px 28px}
+.bgb img{height:230px;width:auto;margin-inline:auto}
+.bgb h3{font-size:24px;font-weight:600;margin-bottom:8px}
+.bgb ul{margin:10px 0 0;padding-left:20px}
+
+/* tests */
+.tests{background:var(--teal);color:#fff}
+.tests h2,.tests h3{color:#fff}
+.tests .grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;align-items:start}
+.tests .grid{align-items:stretch}
+.tests .photo{position:relative;min-height:420px}
+.tests .photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:6px}
+.steps{list-style:none;margin:26px 0 0;padding:0;counter-reset:s;display:grid;gap:0}
+.steps li{counter-increment:s;display:grid;grid-template-columns:48px 1fr;gap:18px;padding:20px 0;border-top:1px solid rgba(255,255,255,.22)}
+.steps li:before{content:counter(s);font-family:var(--head);font-weight:600;font-size:34px;line-height:1;color:var(--cyan)}
+.steps b{font-family:var(--head);font-weight:600;font-size:19px;display:block;margin-bottom:4px}
+.steps span{color:#D6E7F1;font-size:16.5px}
+.how{margin-top:0;display:grid;gap:0}
+.how>div{padding:20px 0 20px 66px;border-top:1px solid rgba(255,255,255,.22)}
+.how h3{font-size:19px;font-weight:600;margin-bottom:6px}
+.how p{color:#D6E7F1;font-size:16px}
+.tests .how>div{padding-left:0}
+.tests .how>div:first-child{border-top:0;padding-top:0}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:12px;grid-auto-flow:dense}
+.gal figure{margin:0;overflow:hidden;border-radius:6px;background:var(--paper)}
+.gal img{width:100%;height:100%;object-fit:cover}
+.gal .tall{grid-row:span 2}
+.gal .wide{grid-column:span 2}
+
+/* certs */
+.certs{background:var(--paper)}
+.cert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.cert{display:flex;flex-direction:column;gap:14px}
+.cert a{display:block;background:#fff;padding:10px;border-radius:4px;box-shadow:0 1px 0 var(--line),0 12px 28px -14px rgba(1,48,100,.35)}
+.cert img{width:100%;height:auto;aspect-ratio:1/1.3;object-fit:cover;object-position:top}
+.cert h3{font-size:18px;font-weight:600;line-height:1.3}
+.cert p{font-size:15.5px;color:var(--muted)}
+.docs{margin-top:34px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;font-size:16px}
+.docs p{border-left:3px solid var(--blue);padding-left:14px}
+
+/* contacts */
+.contacts{background:var(--navy);color:#fff}
+.contacts h2{color:#fff}
+.ct{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:56px}
+.big-tel{display:inline-block;margin-top:22px;font-family:var(--head);font-weight:600;font-size:clamp(32px,5vw,56px);text-decoration:none;line-height:1.1;color:#fff;border-bottom:3px solid var(--signal)}
+.big-tel:hover{color:var(--cyan)}
+.ct .small{margin-top:14px;color:#BBD6EA}
+.ct .actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+.btn-white{border-color:#fff;color:#fff}
+.btn-white:hover{background:#fff;color:var(--navy)}
+.ct dl{margin:0;display:grid;gap:0}
+.ct dl>div{padding:16px 0;border-top:1px solid rgba(255,255,255,.22)}
+.ct dt{color:#BBD6EA;font-size:15px}
+.ct dd{margin:2px 0 0;font-size:18px}
+.ct dd a{text-decoration:none;border-bottom:1px solid rgba(255,255,255,.4)}
+.ct dd a:hover{border-color:var(--cyan);color:var(--cyan)}
+.ct .person{font-weight:500}
+
+footer{background:#012246;color:#9DB6CA;font-size:14px;padding:22px 0}
+footer .wrap{display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between}
+
+@media (max-width:980px){
+  .nav{display:none}
+  .top .wrap{justify-content:space-between}
+  .top-tel{margin-left:auto}
+  .hero .wrap{grid-template-columns:1fr;padding-block:36px 24px;gap:28px}
+  .hero-art{width:min(86%,420px)}
+  .hero-cap{position:static;margin-top:10px;max-width:none}
+  .facts dl{grid-template-columns:1fr 1fr}
+  .facts dl>div:nth-child(3){border-left:0;padding-left:0}
+  .facts dl>div:nth-child(n+3){border-top:1px solid rgba(255,255,255,.18)}
+  .fam{grid-template-columns:1fr 1fr}
+  .card.c-a,.card.c-b,.card.c-c,.card.c-d{grid-column:span 1}
+  .card.c-e{grid-column:span 2}
+  .tests .grid{grid-template-columns:1fr;gap:0}
+  .tests .how>div:first-child{border-top:1px solid rgba(255,255,255,.22);padding-top:20px}
+  .tests .photo{min-height:0;aspect-ratio:16/10}
+  .cert-grid{grid-template-columns:1fr 1fr}
+  .cat-grid{grid-template-columns:1fr}
+  .cat-pic{display:none}
+  .ct{grid-template-columns:1fr;gap:34px}
+  .gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:180px}
+  .gal .tall{grid-row:span 1}
+  .gal .w2{grid-column:span 1}
+}
+@media (max-width:620px){
+  body{font-size:16.5px}
+  .brand img{height:38px}
+  .brand b{font-size:20px}
+  .brand i{font-size:10px;letter-spacing:.08em}
+  .top .wrap{min-height:62px;gap:12px}
+  .top-tel{font-size:15px}
+  .hero .lead{font-size:17.5px}
+  .hero .actions .btn{width:100%}
+  .fam{grid-template-columns:1fr}
+  .card.c-e{grid-column:span 1;flex-direction:column;align-items:flex-start}
+  .card.c-e .pic{flex:none;width:100%}
+  .tbl th,.tbl td{padding:10px 6px}
+  .tbl th:first-child,.tbl td:first-child{padding-left:10px}
+  .tbl th:last-child,.tbl td:last-child{padding-right:10px}
+  .tbl td:first-child{white-space:normal}
+  .tbl .t{max-width:9.5em;line-height:1.25;margin-top:2px}
+  .tbl th{font-size:13.5px}
+  .tbl .m,.tbl .v{font-size:17px}
+  .tbl .t{font-size:12.5px}
+  .tbl td{font-size:15px}
+  .bgb{grid-template-columns:1fr;padding:20px}
+  .how>div{padding-left:0}
+  .tests .photo{aspect-ratio:4/3}
+  .cert-grid{grid-template-columns:1fr}
+  .facts dl>div{padding:16px 14px}
+  .facts dd{font-size:21px}
+  .gal{grid-auto-rows:150px;gap:8px}
+}
+@media (prefers-reduced-motion:reduce){
+  .ring-dark{animation:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="СФЕРА, российские баллоны"><img src="img/logo-mark.png" alt="" width="45" height="46"><span><b>СФЕРА</b><i>Российские баллоны</i></span></a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#catalog">Каталог</a>
+      <a href="#tests">Испытания</a>
+      <a href="#plant">Производство</a>
+      <a href="#certs">Сертификаты</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="top-tel" href="tel:+78342253442">+7 (8342) 25-34-42</a>
+  </div>
+</header>
+
+<main id="top">
+
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Баллоны для сжиженного углеводородного газа</h1>
+      <p class="lead">ООО «Сфера» делает автомобильные газовые баллоны и бытовой баллон БГБ-50. Завод стоит в посёлке Ялга, городской округ Саранск.</p>
+      <div class="actions">
+        <a class="btn btn-signal" href="tel:+78342253442">Позвонить в офис</a>
+        <a class="btn btn-line" href="#catalog">Смотреть модели</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <svg viewBox="0 0 400 400" aria-hidden="true">
+        <circle class="ring-base" cx="200" cy="200" r="168"/>
+        <circle class="ring-dark a" cx="200" cy="200" r="168" pathLength="360" stroke-dasharray="86 360" transform="rotate(-78 200 200)"/>
+        <circle class="ring-dark b" cx="200" cy="200" r="168" pathLength="360" stroke-dasharray="70 360" transform="rotate(108 200 200)"/>
+      </svg>
+      <img class="tank" src="img/p-tor.webp" alt="Тороидальный газовый баллон БГТ-38" width="560" height="373">
+    </div>
+  </div>
+  <div class="facts">
+    <div class="wrap">
+      <dl>
+        <div><dt>Рабочее давление</dt><dd>1,6 МПа</dd></div>
+        <div><dt>Давление при испытании</dt><dd>3,0 МПа</dd></div>
+        <div><dt>Температура эксплуатации</dt><dd>−40…+45 °C</dd></div>
+        <div><dt>Срок службы автобаллона</dt><dd>10 лет</dd></div>
+      </dl>
+    </div>
+  </div>
+</div>
+
+<section id="catalog-families" class="families">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Что мы выпускаем</h2>
+      <p>Автомобильные баллоны для газобаллонного оборудования. Тороидальные баллоны ставят на место запасного колеса или под кузов. Цилиндрические баллоны ставят на раму.</p>
+    </div>
+    <div class="fam">
+      <article class="card c-a">
+        <div class="pic"><img src="img/p-tor.webp" alt="Баллон БГТ с внутренней горловиной" width="560" height="373"></div>
+        <h3>Тороидальные БГТ, внутренняя горловина</h3>
+        <div class="range">6 моделей, 38–74 л</div>
+        <p>Горловина под углом 30° для мультиклапана. Баллон крепят на винты в нише на месте запасного колеса.</p>
+      </article>
+      <article class="card c-b">
+        <div class="pic"><img src="img/p-torn.webp" alt="Баллон БГТ-Н с наружной горловиной" width="560" height="373"></div>
+        <h3>Тороидальные БГТ-Н, наружная горловина</h3>
+        <div class="range">6 моделей, 42–94 л</div>
+        <p>Горловина снаружи. Баллон крепят на винты с внешней стороны кузова.</p>
+      </article>
+      <article class="card c-c">
+        <div class="pic"><img src="img/p-130.webp" alt="Цилиндрический баллон БГ-130" width="560" height="373"></div>
+        <h3>Цилиндрические БГ</h3>
+        <div class="range">6 моделей, БГ-50 … БГ-170</div>
+        <p>Диаметр 300 или 400 мм. Баллон входит в комплект газобаллонного оборудования по СТА ГТО-2-97.</p>
+      </article>
+      <article class="card c-d">
+        <div class="pic"><img src="img/p-bgb50.webp" alt="Бытовой пропановый баллон БГБ-50" width="373" height="560"></div>
+        <h3>Бытовой баллон БГБ-50</h3>
+        <div class="range">50 л, сталь Ст3</div>
+        <p>Для хранения сжиженного газа под рабочим давлением 1,6 МПа. Срок службы 20 лет.</p>
+      </article>
+      <article class="card c-e">
+        <div class="pic"><img src="img/p-bracket.webp" alt="Кронштейн 400 для цилиндрического баллона" width="560" height="373"></div>
+        <div class="txt">
+          <h3>Кронштейн 400</h3>
+          <div class="range">Для баллонов диаметром 400 мм</div>
+          <p>Подходит к баллонам БГ-100, БГ-130 и БГ-170. Крепит цилиндрический баллон к раме автомобиля. Основание из стали 5 мм, корпус из стали 3 мм. Покраска порошковой краской в камере. Срезанная форма облегчает установку баллона.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="catalog" class="catalog" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Размеры, объём и масса</h2>
+      <p>Выберите тип баллона. Таблица показывает только изделия из каталога завода.</p>
+    </div>
+
+    <dl class="common">
+      <div><dt>Рабочая среда</dt><dd>Пропан-бутан, ГОСТ 27578</dd></div>
+      <div><dt>Расчётное давление</dt><dd>3,0 МПа</dd></div>
+      <div><dt>Рабочее давление</dt><dd>1,6 МПа</dd></div>
+      <div><dt>Арматура</dt><dd>Фланец, евростандарт</dd></div>
+      <div><dt>Освидетельствование</dt><dd>1 раз в два года</dd></div>
+    </dl>
+
+    <div class="tabs" role="group" aria-label="Тип баллона">
+      <button type="button" data-f="all" aria-pressed="true">Все модели</button>
+      <button type="button" data-f="in" aria-pressed="false">Тор, внутренняя горловина</button>
+      <button type="button" data-f="out" aria-pressed="false">Тор, наружная горловина</button>
+      <button type="button" data-f="cyl" aria-pressed="false">Цилиндр</button>
+    </div>
+
+    <div class="cat-grid">
+    <div style="overflow-x:auto;min-width:0">
+    <table class="tbl" id="tbl">
+      <thead><tr><th>Модель</th><th>Объём, л</th><th>Размеры, мм</th><th>Масса, кг</th></tr></thead>
+      <tbody>
+        <tr data-t="in"><td><span class="m">БГТ-38</span><span class="t">тор, внутренняя горловина</span></td><td class="v">38</td><td>600 × 180</td><td>21</td></tr>
+        <tr data-t="in"><td><span class="m">БГТ-42</span><span class="t">тор, внутренняя горловина</span></td><td class="v">42</td><td>600 × 200</td><td>21</td></tr>
+        <tr data-t="in"><td><span class="m">БГТ-49</span><span class="t">тор, внутренняя горловина</span></td><td class="v">49</td><td>630 × 200</td><td>24,3</td></tr>
+        <tr data-t="in"><td><span class="m">БГТ-54</span><span class="t">тор, внутренняя горловина</span></td><td class="v">54</td><td>630 × 220</td><td>25</td></tr>
+        <tr data-t="in"><td><span class="m">БГТ-57</span><span class="t">тор, внутренняя горловина</span></td><td class="v">57</td><td>720 × 180</td><td>32</td></tr>
+        <tr data-t="in"><td><span class="m">БГТ-74</span><span class="t">тор, внутренняя горловина</span></td><td class="v">74</td><td>720 × 225</td><td>34</td></tr>
+        <tr data-t="out"><td><span class="m">БГТ-42Н</span><span class="t">тор, наружная горловина</span></td><td class="v">42</td><td>600 × 200</td><td>21</td></tr>
+        <tr data-t="out"><td><span class="m">БГТ-49Н</span><span class="t">тор, наружная горловина</span></td><td class="v">49</td><td>630 × 200</td><td>24,3</td></tr>
+        <tr data-t="out"><td><span class="m">БГТ-54Н</span><span class="t">тор, наружная горловина</span></td><td class="v">54</td><td>630 × 220</td><td>25,5</td></tr>
+        <tr data-t="out"><td><span class="m">БГТ-57Н</span><span class="t">тор, наружная горловина</span></td><td class="v">57</td><td>720 × 180</td><td>32</td></tr>
+        <tr data-t="out"><td><span class="m">БГТ-74Н</span><span class="t">тор, наружная горловина</span></td><td class="v">74</td><td>720 × 225</td><td>34</td></tr>
+        <tr data-t="out"><td><span class="m">БГТ-94Н</span><span class="t">тор, наружная горловина</span></td><td class="v">94</td><td>720 × 280</td><td>37</td></tr>
+        <tr data-t="cyl"><td><span class="m">БГ-50</span><span class="t">цилиндр, длина × диаметр</span></td><td class="v">50</td><td>798 × 300</td><td>21</td></tr>
+        <tr data-t="cyl"><td><span class="m">БГ-60</span><span class="t">цилиндр, длина × диаметр</span></td><td class="v">60</td><td>948 × 300</td><td>25</td></tr>
+        <tr data-t="cyl"><td><span class="m">БГ-65</span><span class="t">цилиндр, длина × диаметр</span></td><td class="v">—</td><td>1023 × 300</td><td>26,5</td></tr>
+        <tr data-t="cyl"><td><span class="m">БГ-100</span><span class="t">цилиндр, длина × диаметр</span></td><td class="v">100</td><td>895 × 400</td><td>31,5</td></tr>
+        <tr data-t="cyl"><td><span class="m">БГ-130</span><span class="t">цилиндр, длина × диаметр</span></td><td class="v">130</td><td>1144 × 400</td><td>39</td></tr>
+        <tr data-t="cyl"><td><span class="m">БГ-170</span><span class="t">цилиндр, длина × диаметр</span></td><td class="v">—</td><td>1300 × 400</td><td>50,5</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <aside class="cat-pic" aria-hidden="true"><img id="catimg" src="img/p-tor.webp" alt="" width="560" height="373"><p id="catcap">В каталоге 12 тороидальных и 6 цилиндрических баллонов</p></aside>
+    </div>
+    <p class="note">Объём БГ-65 и БГ-170 уточняйте у завода. Для цилиндров с диаметром 300 мм ставят мультиклапан высотой 300 мм, с диаметром 400 мм — высотой 400 мм. Угол мультиклапана 30°, класс любой.</p>
+
+    <div class="bgb">
+      <img src="img/p-bgb50.webp" alt="Баллон БГБ-50" width="150" height="225">
+      <div>
+        <h3>Бытовой баллон БГБ-50</h3>
+        <p>Баллон на 50 л из углеродистой стали Ст3. Диаметр корпуса 300 мм, высота 870 мм, масса 20,9 кг. Стенка 2,7 мм. Баллон идёт с вентилем ВБ-2/ВБК-2, опорным башмаком и защитным колпаком. Завод поставляет баллон пустым.</p>
+        <ul>
+          <li>Рабочее давление 1,6 МПа.</li>
+          <li>Температура от −40 до +45 °C.</li>
+          <li>Срок службы 20 лет, освидетельствование каждые 5 лет.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tests" class="tests">
+  <div class="wrap grid">
+    <div>
+      <h2>Три испытания для каждого автомобильного баллона</h2>
+      <p style="margin-top:14px;color:#D6E7F1;font-size:18px">Баллон поступает в продажу только после этих проверок.</p>
+      <ol class="steps">
+        <li><div><b>Пневматическое испытание</b><span>Проверка герметичности баллона.</span></div></li>
+        <li><div><b>Гидравлическое испытание</b><span>Проверка прочности давлением 3,0 МПа по регламенту ЕЭК ООН № 67-01.</span></div></li>
+        <li><div><b>Рентгеноскопия или ультразвуковой контроль</b><span>Проверка всех сварных швов по регламенту ЕЭК ООН № 67-01.</span></div></li>
+      </ol>
+    </div>
+    <div class="how">
+        <div>
+          <h3>Автоматическая сварка Fronius</h3>
+          <p>Завод сваривает швы на швейцарском оборудовании Fronius под керамическим флюсом. Шов получается гладкий, без чешуйчатости.</p>
+        </div>
+        <div>
+          <h3>Своя лаборатория</h3>
+          <p>На предприятии работает аттестованная лаборатория неразрушающего контроля. Входной и межоперационный контроль идут на всех этапах.</p>
+        </div>
+        <div>
+          <h3>Защита от коррозии</h3>
+          <p>Особое покрытие внутри баллона продлевает срок службы баллона и подкапотного оборудования: редукторов, форсунок, фильтров.</p>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section id="plant">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Производственный процесс</h2>
+      <p>Фотографии с сайта завода.</p>
+    </div>
+    <div class="gal">
+      <figure class="tall"><img src="img/ph-rings.webp" alt="Ряд тороидальных корпусов баллонов" width="700" height="1049"></figure>
+      <figure class="wide"><img src="img/ph-plasma.webp" alt="Плазменная резка листа" width="800" height="860"></figure>
+      <figure><img src="img/ph-black.webp" alt="Окрашенные тороидальные баллоны" width="800" height="800"></figure>
+      <figure><img src="img/ph-neck.webp" alt="Горловина баллона" width="900" height="600"></figure>
+      <figure class="wide"><img src="img/ph-blue.webp" alt="Заготовки баллонов на складе" width="900" height="660"></figure>
+      <figure><img src="img/ph-stack.webp" alt="Штабеля корпусов баллонов" width="900" height="750"></figure>
+      <figure><img src="img/ph-weld.webp" alt="Сварной шов корпуса баллона" width="900" height="650"></figure>
+      <figure class="wide w2"><img src="img/ph-stack2.webp" alt="Стопки корпусов баллонов" width="700" height="933"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="certs" class="certs">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Сертификаты</h2>
+      <p>Нажмите на скан, чтобы открыть документ крупно.</p>
+    </div>
+    <div class="cert-grid">
+      <div class="cert">
+        <a href="img/cert-tr018.webp" target="_blank" rel="noopener"><img src="img/cert-tr018.webp" alt="Сертификат соответствия ЕАЭС KG 417/053.RU.02.00967" width="800" height="1131"></a>
+        <h3>Баллоны БГ и БГТ, ТР ТС 018/2011</h3>
+        <p>Сертификат № ЕАЭС KG 417/053.RU.02.00967. Действует по 9 августа 2028 года.</p>
+      </div>
+      <div class="cert">
+        <a href="img/cert-kg033.webp" target="_blank" rel="noopener"><img src="img/cert-kg033.webp" alt="Сертификат ЕАЭБ KG417/033.RU.02.03569" width="800" height="1108"></a>
+        <h3>Баллоны БГ и БГТ от 38 до 200 л</h3>
+        <p>Сертификат № ЕАЭБ KG417/033.RU.02.03569. Действует по 19 марта 2028 года.</p>
+      </div>
+      <div class="cert">
+        <a href="img/cert-bgb.webp" target="_blank" rel="noopener"><img src="img/cert-bgb.webp" alt="Сертификат соответствия ЕАЭС KG 417/053.RU.02.04859" width="800" height="1131"></a>
+        <h3>Бытовые баллоны БГБ, ТР ТС 032/2013</h3>
+        <p>Сертификат № ЕАЭС KG 417/053.RU.02.04859. Действует по 17 июня 2030 года.</p>
+      </div>
+    </div>
+    <div class="docs">
+      <p>Автомобильные баллоны БГ и БГТ изготовлены по ТУ 29.32.30-001-03444128-2017.</p>
+      <p>Бытовые баллоны БГБ изготовлены по ТУ 25.29.12-003-03444128-2024.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contacts" class="contacts">
+  <div class="wrap ct">
+    <div>
+      <h2>Позвоните на завод</h2>
+      <a class="big-tel" href="tel:+78342253442">+7 (8342) 25-34-42</a>
+      <p class="small">Офис принимает звонки с 8:00 до 17:00, с понедельника по пятницу.</p>
+      <div class="actions">
+        <a class="btn btn-signal" href="tel:+78342253442">Позвонить</a>
+        <a class="btn btn-line btn-white" href="mailto:sferagbo@mail.ru">Написать на почту</a>
+      </div>
+    </div>
+    <dl>
+      <div><dt>Адрес</dt><dd>ООО «Сфера», г.о. Саранск, р.п. Ялга, ул. Пионерская, д. 10 · <a href="https://yandex.ru/maps/?text=%D0%A1%D0%B0%D1%80%D0%B0%D0%BD%D1%81%D0%BA%2C%20%D0%AF%D0%BB%D0%B3%D0%B0%2C%20%D0%9F%D0%B8%D0%BE%D0%BD%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F%2C%2010" target="_blank" rel="noopener">на карте</a></dd></div>
+      <div><dt>Электронная почта</dt><dd><a href="mailto:sferagbo@mail.ru">sferagbo@mail.ru</a></dd></div>
+      <div><dt>Коммерческий директор</dt><dd><span class="person">Тарасова Анастасия Евгеньевна</span><br><a href="tel:+79876992125">+7-987-699-21-25</a></dd></div>
+      <div><dt>Главный инженер</dt><dd><span class="person">Бояркин Денис Борисович</span><br><a href="tel:+79376770528">+7-937-677-05-28</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Демо-версия. Материалы принадлежат ООО «Сфера».</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var pics={all:['img/p-tor.webp','В каталоге 12 тороидальных и 6 цилиндрических баллонов'],in:['img/p-tor.webp','Внутренняя горловина: баллон ставят в нишу на место запасного колеса'],out:['img/p-torn.webp','Наружная горловина: баллон ставят снаружи кузова'],cyl:['img/p-130.webp','Цилиндрические баллоны БГ: диаметр 300 или 400 мм']};
+  var im=document.getElementById('catimg'),cp=document.getElementById('catcap');
+  var btns=document.querySelectorAll('.tabs button'),rows=document.querySelectorAll('#tbl tbody tr');
+  btns.forEach(function(b){
+    b.addEventListener('click',function(){
+      var f=b.getAttribute('data-f');
+      btns.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
+      rows.forEach(function(r){r.hidden=(f!=='all'&&r.getAttribute('data-t')!==f)});
+      im.src=pics[f][0];cp.textContent=pics[f][1];
+    });
+  });
+})();
+</script>
+</body>
+</html>
